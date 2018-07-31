@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/photo-editing-tool.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>photo editing tool</title>
+</head>
+
+<body>
+  <h1>Variables</h1>
+  <div class="control-container">
+    <h2>updating input</h2>
+    <!- deze labels en inputs zien er dus uit als schuifjes en color picker etc ->
+    <div class="controls">
+      <label for="hue">Hue:</label>
+      <input id="hue" type="range" name="cat-hue-rotate" min="0" max="360" value="0" data-sizing="deg">
+
+      <label for="contrast">Contrast:</label>
+      <input id="contrast" type="range" name="cat-contrast" min="100" max="800" value="0" data-sizing="%">
+
+      <label for="saturation">Saturation:</label>
+      <input id="saturation" type="range" name="cat-saturate" min="1" max="25" value="0">
+
+      <label for="invert">Invert:</label>
+      <input id="invert" type="range" name="cat-invert" min="0" max="100" value="0" data-sizing="%">
+
+      <label for="bg-color">Background</label>
+      <input id="bg-color" type="color" name="bg-color" value="#000000">
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="https://img00.deviantart.net/1c51/i/2013/135/7/4/colourpoint_free_png_cat_stock_by_janeeden-d3azobp.png" alt="">
+  </div>
+
+  <script>
+    const inputs = document.querySelectorAll('.controls input');
+
+    function update() {
+      console.log(this.value);
+      console.log(this.dataset); // data-watever data-whatever2 het pakt alles met prefix data, je kan het zelf namen geven
+      const suffix = this.dataset.sizing || ''; //dit is omdat sommige wel prefix nodig hebben, die '' is voor color en saturation
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+
+    }
+
+    inputs.forEach(input => input.addEventListener('change', update));
+    inputs.forEach(input => input.addEventListener('mousemove', update));
+
+  </script>
+</body>
+
+</html>
