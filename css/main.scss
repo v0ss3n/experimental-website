@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster|Krona+One|Neuton|Press+Start+2P|Stalinist+One');
+
+$white: #fff;
+$black: #000;
+$primary-red: #881111;
+$lavender: #d0cad8;
+
+$ff-neuton: 'Neuton', serif;
+$ff-krona: 'Krona One', sans-serif;
+$ff-stalinist: 'Stalinist One', cursive;
+
+
+
+// font-family: 'Krona One', sans-serif;
+// font-family: 'Neuton', serif;
+// font-family: 'Stalinist One', cursive;
+// font-family: 'Press Start 2P', cursive;
+// font-family: 'Creepster', cursive;
+
+body {
+  background-color: $lavender;
+  font-family: $ff-neuton;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 0;
+}
+
+h2 {
+  color: $black;
+  font-family: $ff-krona;
+}
+
+h3 {
+  font-family: 'Stalinist One', cursive;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+
+  li {
+    padding: 10px 20px;
+  }
+}
+
+p {
+  color: $primary-red;
+}
+
+article {
+  padding: 0 5%;
+}
