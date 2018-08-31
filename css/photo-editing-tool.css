@@ -34,3 +34,27 @@ body {
   max-width: 100%;
   filter: hue-rotate(var(--cat-hue-rotate)) contrast(var(--cat-contrast)) saturate(var(--cat-saturate)) invert(var(--cat-invert));
 }
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid red;
+  color: red;
+  background-color: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
