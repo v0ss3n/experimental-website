@@ -45,6 +45,8 @@ article {
 .chaos-page {
   background-color: #000;
   padding: 5%; }
+  .chaos-page article {
+    padding: 0 5% 0 0; }
   .chaos-page h1 {
     font-family: "Krona One", sans-serif;
     font-size: 30px;
@@ -66,12 +68,12 @@ article {
 .chaos-wrapper {
   display: flex;
   flex-flow: row wrap; }
+  .chaos-wrapper img {
+    width: 100%; }
   .chaos-wrapper article {
     flex: 3; }
   .chaos-wrapper aside {
     flex: 2; }
-    .chaos-wrapper aside img {
-      width: 100%; }
     .chaos-wrapper aside .videowrapper,
     .chaos-wrapper aside img {
       margin: 0 0 20px; }
@@ -84,5 +86,14 @@ article {
   .process-wrapper img {
     width: 49%;
     padding-bottom: 2%; }
+
+@media screen and (max-width: 600px) {
+  .chaos-page {
+    padding: 3%; }
+    .chaos-page article {
+      padding: 0; }
+
+  .chaos-wrapper {
+    flex-flow: column wrap; } }
 
 /*# sourceMappingURL=main.css.map */
