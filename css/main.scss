@@ -26,6 +26,7 @@ body {
   font-family: $ff-neuton;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -60,7 +61,7 @@ article {
 
 .videowrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 56.25%;
 	padding-top: 25px;
 	height: 0;
 }
@@ -75,6 +76,14 @@ article {
 .chaos-page {
   background-color: $black;
   padding: 5%;
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  img + p {
+    margin-top: -20px;
+  }
 
   article {
     padding: 0 5% 0 0;
@@ -137,17 +146,19 @@ article {
   justify-content: space-between;
 
   img {
-    width: 49%;
-    padding-bottom: 2%;
+    width: 32%;
+    margin-bottom: 2%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .chaos-page {
     padding: 3%;
 
-    article {
+    article,
+    aside {
       padding: 0;
+      flex: auto;
     }
   }
 

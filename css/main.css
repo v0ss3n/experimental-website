@@ -4,7 +4,8 @@ body {
   background-color: #d0cad8;
   font-family: "Neuton", serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
 
 h1 {
   font-size: 0; }
@@ -31,7 +32,6 @@ article {
 .videowrapper {
   position: relative;
   padding-bottom: 56.25%;
-  /* 16:9 */
   padding-top: 25px;
   height: 0; }
 
@@ -45,6 +45,10 @@ article {
 .chaos-page {
   background-color: #000;
   padding: 5%; }
+  .chaos-page img {
+    margin-bottom: 20px; }
+  .chaos-page img + p {
+    margin-top: -20px; }
   .chaos-page article {
     padding: 0 5% 0 0; }
   .chaos-page h1 {
@@ -84,14 +88,16 @@ article {
   align-items: flex-start;
   justify-content: space-between; }
   .process-wrapper img {
-    width: 49%;
-    padding-bottom: 2%; }
+    width: 32%;
+    margin-bottom: 2%; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .chaos-page {
     padding: 3%; }
-    .chaos-page article {
-      padding: 0; }
+    .chaos-page article,
+    .chaos-page aside {
+      padding: 0;
+      flex: auto; }
 
   .chaos-wrapper {
     flex-flow: column wrap; } }
