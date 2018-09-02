@@ -5,21 +5,14 @@ $white: #fff;
 $black: #000;
 $primary-red: #881111;
 $lavender: #d0cad8;
-$grey: #b1b1b1;
+$grey: #cecece;
+$light-grey: #e8e8e8;
 $green: rgb(21, 255, 0);
 
 $ff-neuton: 'Neuton', serif;
 $ff-krona: 'Krona One', sans-serif;
 $ff-stalinist: 'Stalinist One', cursive;
 $ff-scheherazade: 'Scheherazade', serif;
-
-
-
-// font-family: 'Krona One', sans-serif;
-// font-family: 'Neuton', serif;
-// font-family: 'Stalinist One', cursive;
-// font-family: 'Press Start 2P', cursive;
-// font-family: 'Creepster', cursive;
 
 body {
   background-color: $lavender;
@@ -75,29 +68,30 @@ article {
 
 .chaos-page {
   background-color: $black;
-  padding: 5%;
+  padding: 10%;
 
   img {
     margin-bottom: 20px;
   }
 
-  img + p {
+  img + p,
+  .videowrapper + p {
     margin-top: -20px;
   }
 
   article {
-    padding: 0 5% 0 0;
+    padding: 0 6% 0 0;
   }
 
   h1 {
     font-family: $ff-krona;
-    font-size: 30px;
+    font-size: 36px;
     color: $white;
   }
 
   h2 {
     font-family: $ff-krona;
-    font-size: 15px;
+    font-size: 18px;
     color: $lavender;
   }
 
@@ -108,7 +102,8 @@ article {
   p,
   a {
     font-family: $ff-scheherazade;
-    font-size: 16px;
+    font-size: 19px;
+    line-height: 1.6;
     color: $grey;
   }
 
@@ -126,7 +121,7 @@ article {
   }
 
   article {
-    flex: 3;
+    flex: 4;
   }
 
   aside {
@@ -159,6 +154,11 @@ article {
     aside {
       padding: 0;
       flex: auto;
+    }
+
+    p {
+      color: $light-grey;
+      font-size: 20px;
     }
   }
 

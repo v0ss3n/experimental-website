@@ -44,28 +44,30 @@ article {
 
 .chaos-page {
   background-color: #000;
-  padding: 5%; }
+  padding: 10%; }
   .chaos-page img {
     margin-bottom: 20px; }
-  .chaos-page img + p {
+  .chaos-page img + p,
+  .chaos-page .videowrapper + p {
     margin-top: -20px; }
   .chaos-page article {
-    padding: 0 5% 0 0; }
+    padding: 0 6% 0 0; }
   .chaos-page h1 {
     font-family: "Krona One", sans-serif;
-    font-size: 30px;
+    font-size: 36px;
     color: #fff; }
   .chaos-page h2 {
     font-family: "Krona One", sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     color: #d0cad8; }
   .chaos-page .name {
     color: #881111; }
   .chaos-page p,
   .chaos-page a {
     font-family: "Scheherazade", serif;
-    font-size: 16px;
-    color: #b1b1b1; }
+    font-size: 19px;
+    line-height: 1.6;
+    color: #cecece; }
   .chaos-page a {
     color: #15ff00; }
 
@@ -75,7 +77,7 @@ article {
   .chaos-wrapper img {
     width: 100%; }
   .chaos-wrapper article {
-    flex: 3; }
+    flex: 4; }
   .chaos-wrapper aside {
     flex: 2; }
     .chaos-wrapper aside .videowrapper,
@@ -98,6 +100,9 @@ article {
     .chaos-page aside {
       padding: 0;
       flex: auto; }
+    .chaos-page p {
+      color: #e8e8e8;
+      font-size: 20px; }
 
   .chaos-wrapper {
     flex-flow: column wrap; } }
