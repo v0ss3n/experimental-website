@@ -94,6 +94,13 @@ article {
     .chaos-wrapper aside .videowrapper,
     .chaos-wrapper aside img {
       margin: 0 0 20px; }
+  .chaos-wrapper .image-text-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .chaos-wrapper .image-text {
+    width: 49%; }
 
 .process-wrapper {
   display: flex;
