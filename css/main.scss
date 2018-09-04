@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Creepster|Krona+One|Neuton|Press+Start+2P|Stalinist+One');
-@import url('https://fonts.googleapis.com/css?family=Scheherazade');
+@import url('https://fonts.googleapis.com/css?family=Scheherazade|Krona+One|Neuton|Stalinist+One');
 
 $white: #fff;
 $black: #000;
@@ -68,7 +67,7 @@ article {
 
 .chaos-page {
   background-color: $black;
-  padding: 12%;
+  padding: 8% 12%;
 
   img {
     margin-bottom: 20px;
@@ -87,16 +86,18 @@ article {
     font-family: $ff-krona;
     font-size: 72px;
     color: $white;
+    margin: 0 0 20px;
   }
 
   h2 {
     font-family: $ff-krona;
     font-size: 18px;
     color: $lavender;
+    margin: 24px 0 10px;
   }
 
   .name {
-    color: $primary-red;
+    color: $green;
     position: absolute;
     top: 20px;
     right: 2%;
@@ -112,9 +113,18 @@ article {
     color: $grey;
   }
 
+  p {
+    margin: 10px 0;
+  }
+
   a {
     color: $green;
   }
+
+  section .videowrapper {
+    margin-bottom: 2%;
+  }
+
 }
 
 .chaos-wrapper {
@@ -193,6 +203,7 @@ section {
 
     h1 {
       font-size: 48px;
+      margin: 20px 0;
     }
 
     .name {

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Creepster|Krona+One|Neuton|Press+Start+2P|Stalinist+One");
-@import url("https://fonts.googleapis.com/css?family=Scheherazade");
+@import url("https://fonts.googleapis.com/css?family=Scheherazade|Krona+One|Neuton|Stalinist+One");
 body {
   background-color: #d0cad8;
   font-family: "Neuton", serif;
@@ -44,7 +43,7 @@ article {
 
 .chaos-page {
   background-color: #000;
-  padding: 12%; }
+  padding: 8% 12%; }
   .chaos-page img {
     margin-bottom: 20px; }
   .chaos-page img + p,
@@ -55,13 +54,15 @@ article {
   .chaos-page h1 {
     font-family: "Krona One", sans-serif;
     font-size: 72px;
-    color: #fff; }
+    color: #fff;
+    margin: 0 0 20px; }
   .chaos-page h2 {
     font-family: "Krona One", sans-serif;
     font-size: 18px;
-    color: #d0cad8; }
+    color: #d0cad8;
+    margin: 24px 0 10px; }
   .chaos-page .name {
-    color: #881111;
+    color: #15ff00;
     position: absolute;
     top: 20px;
     right: 2%;
@@ -73,8 +74,12 @@ article {
     font-size: 19px;
     line-height: 1.6;
     color: #cecece; }
+  .chaos-page p {
+    margin: 10px 0; }
   .chaos-page a {
     color: #15ff00; }
+  .chaos-page section .videowrapper {
+    margin-bottom: 2%; }
 
 .chaos-wrapper {
   display: flex;
@@ -123,7 +128,8 @@ section .documentary__element--3 {
       padding: 0;
       flex: auto; }
     .chaos-page h1 {
-      font-size: 48px; }
+      font-size: 48px;
+      margin: 20px 0; }
     .chaos-page .name {
       font-size: 24px;
       transform: rotate(0);
