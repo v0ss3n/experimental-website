@@ -72,8 +72,8 @@ article {
   .chaos-page p,
   .chaos-page a {
     font-family: "Scheherazade", serif;
-    font-size: 19px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.5;
     color: #cecece; }
   .chaos-page p {
     margin: 10px 0; }
@@ -145,8 +145,7 @@ section .documentary__element--3 {
       margin: 0;
       top: 11px; }
     .chaos-page p {
-      color: #e8e8e8;
-      font-size: 20px; }
+      color: #e8e8e8; }
 
   .chaos-wrapper {
     flex-flow: column wrap; } }
