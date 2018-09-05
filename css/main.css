@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Scheherazade|Krona+One|Neuton|Stalinist+One");
+::selection {
+  background: #15ff00; }
+
 body {
   background-color: #d0cad8;
   font-family: "Neuton", serif;

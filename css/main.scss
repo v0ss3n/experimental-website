@@ -13,6 +13,10 @@ $ff-krona: 'Krona One', sans-serif;
 $ff-stalinist: 'Stalinist One', cursive;
 $ff-scheherazade: 'Scheherazade', serif;
 
+::selection {
+  background: $green;
+}
+
 body {
   background-color: $lavender;
   font-family: $ff-neuton;
