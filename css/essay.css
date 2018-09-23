@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+  padding: 0 2%;
+}
+
+h3,
+h4,
+h5 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+h4 {
+  color: whitesmoke;
+  text-shadow: 2px 2px #9f6161;
+}
+
+a {
+  color: black;
+}
+
+ol li {
+  color: #881111;
+}
+
+.research-grid {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.research-grid h3 {
+  flex: 0.7;
+}
+
+.research-block {
+  width: 40%;
+}
+
+.research-block:not(:last-of-type) {
+  padding-right: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .research-grid {
+    flex-flow: column nowrap;
+  }
+
+  .research-block {
+    width: 100%;
+  }
+}

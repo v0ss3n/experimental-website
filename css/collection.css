@@ -1,0 +1,18 @@
+body {
+  background: black;
+}
+
+h2,
+h3,
+h4,
+h5,
+p,
+li a {
+  color: white;
+}
+
+section {
+  max-width: 720px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
