@@ -19,7 +19,8 @@ a {
   color: black;
 }
 
-ol li {
+ol li,
+ul li {
   color: #881111;
 }
 
@@ -39,6 +40,29 @@ ol li {
 
 .research-block:not(:last-of-type) {
   padding-right: 18px;
+}
+
+.documentary__element {
+  position: relative;
+}
+
+.documentary__element p {
+  display: none;
+}
+
+.documentary__element:hover p {
+  display: initial;
+  background: white;
+  padding: 12px;
+  font-size: 17px;
+  font-family: 'Source Code Pro', monospace;;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.next-step {
+  text-align: right;
 }
 
 @media screen and (max-width: 768px) {
