@@ -2,6 +2,7 @@
 
 body {
   padding: 0 2%;
+  font-size: 1.1em;
 }
 
 h3,
@@ -42,20 +43,23 @@ ul li {
   padding-right: 18px;
 }
 
-.documentary__element {
+.documentary__element,
+.mixed-grid__img {
   position: relative;
 }
 
-.documentary__element p {
+.documentary__element p,
+.mixed-grid__img p {
   display: none;
 }
 
-.documentary__element:hover p {
+.documentary__element:hover p,
+.mixed-grid__img:hover p {
   display: initial;
   background: white;
   padding: 12px;
   font-size: 17px;
-  font-family: 'Source Code Pro', monospace;;
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -65,9 +69,74 @@ ul li {
   text-align: right;
 }
 
+.mixed-grid {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.mixed-grid:last-of-type {
+  margin-bottom: 100px;
+}
+
+.mixed-grid__article {
+  background-color: white;
+  padding: 2%;
+  margin: 1%;
+  flex: 1;
+  align-self: flex-start;
+  max-height: 480px;
+  overflow-y: scroll;
+}
+
+.mixed-grid__img {
+  background-color: white;
+  padding: 2%;
+  margin: 1%;
+  flex: 1;
+  align-self: flex-start;
+}
+
+.mixed-grid__img img {
+  width: 100%;
+}
+
+.mixed-grid h2 a {
+  color: #695106;
+}
+
+.mixed-grid__article p {
+  color: black;
+}
+
+.marked {
+  background-color: lime;
+}
+
+.prev-page,
+.next-page {
+  background: white;
+  padding: 1%;
+  float: right;
+  margin: 0;
+  width: fit-content;
+}
+
+.videowrapper {
+  margin: 1%;
+}
+
 @media screen and (max-width: 768px) {
-  .research-grid {
+  .research-grid,
+  .mixed-grid {
     flex-flow: column nowrap;
+  }
+
+  .mixed-grid__article,
+  .mixed-grid__img,
+  .videowrapper {
+    margin: 1% 14% 1% 1%;
   }
 
   .research-block {
