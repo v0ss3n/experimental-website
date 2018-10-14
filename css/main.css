@@ -1,41 +1,69 @@
-@import url("https://fonts.googleapis.com/css?family=Scheherazade|Krona+One|Neuton|Stalinist+One");
+@import url("https://fonts.googleapis.com/css?family=Scheherazade|Krona+One|Neuton|Stalinist+One|Libre+Baskerville");
 ::selection {
-  background: #15ff00; }
+  background: #15ff00;
+}
 
 body {
-  background-color: #d0cad8;
+  background-color: #f2f0f4;
   font-family: "Neuton", serif;
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
 
 h1 {
-  font-size: 0; }
+  font-size: 0;
+}
 
 h2 {
   color: #000;
-  font-family: "Krona One", sans-serif; }
+  font-family: "Krona One", sans-serif;
+}
 
 h3 {
-  font-family: 'Stalinist One', cursive; }
+  font-family: "Stalinist One", cursive;
+}
 
 .menu {
   display: flex;
-  list-style: none; }
-  .menu li {
-    padding: 10px 20px; }
+  flex-flow: row nowrap;
+  list-style: none;
+  padding-left: 5%;
+}
+.menu li {
+  padding: 10px;
+}
+.menu li:first-of-type {
+  padding-left: 0;
+}
+.menu li :hover,
+.menu li :active {
+  color: #9d23e9;
+}
+
+.project-list__item {
+  line-height: 2em;
+  list-style: none;
+}
 
 p {
-  color: #881111; }
+  color: #881111;
+}
+
+a {
+  color: #d30e0e;
+}
 
 article {
-  padding: 0 5%; }
+  padding: 0 5%;
+}
 
 .videowrapper {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;
-  height: 0; }
+  height: 0;
+}
 
 .videowrapper iframe {
   position: absolute;
@@ -43,114 +71,176 @@ article {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0; }
+  border: 0;
+}
+
+.still-life {
+  max-width: 300px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  z-index: -1;
+  padding: 1%;
+  background: #d6c9d6;
+  border-style: outset;
+}
 
 .chaos-page {
   background-color: #000;
-  padding: 8% 12%; }
-  .chaos-page img {
-    margin-bottom: 20px; }
-  .chaos-page img + p,
-  .chaos-page .videowrapper + p {
-    margin-top: -20px; }
-  .chaos-page article {
-    padding: 0 6% 0 0; }
-  .chaos-page h1 {
-    font-family: "Krona One", sans-serif;
-    font-size: 72px;
-    color: #fff;
-    margin: 0 0 20px; }
-  .chaos-page h2 {
-    font-family: "Krona One", sans-serif;
-    font-size: 18px;
-    color: #d0cad8;
-    margin: 24px 0 10px; }
-  .chaos-page .name {
-    color: #15ff00;
-    position: absolute;
-    top: 20px;
-    right: 2%;
-    transform: rotate(9DEG);
-    font-size: 48px; }
-  .chaos-page p,
-  .chaos-page a {
-    font-family: "Scheherazade", serif;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #cecece; }
-  .chaos-page p {
-    margin: 10px 0; }
-  .chaos-page a {
-    color: #15ff00; }
-  .chaos-page section .videowrapper {
-    margin-bottom: 2%; }
+  padding: 8% 12%;
+}
+.chaos-page img {
+  margin-bottom: 20px;
+}
+.chaos-page img + p,
+.chaos-page .videowrapper + p {
+  margin-top: -20px;
+}
+.chaos-page article {
+  padding: 0 6% 0 0;
+}
+.chaos-page h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 72px;
+  color: #fff;
+  margin: 0 0 20px;
+}
+.chaos-page h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 18px;
+  color: #f2f0f4;
+  margin: 24px 0 10px;
+}
+.chaos-page .name {
+  color: #15ff00;
+  position: absolute;
+  top: 20px;
+  right: 2%;
+  transform: rotate(9DEG);
+  font-size: 48px;
+}
+.chaos-page p,
+.chaos-page a {
+  font-family: "Scheherazade", serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #cecece;
+}
+.chaos-page p {
+  margin: 10px 0;
+}
+.chaos-page a {
+  color: #15ff00;
+}
+.chaos-page section .videowrapper {
+  margin-bottom: 2%;
+}
 
 .chaos-wrapper {
   display: flex;
-  flex-flow: row wrap; }
-  .chaos-wrapper img {
-    width: 100%; }
-  .chaos-wrapper article {
-    flex: 4; }
-  .chaos-wrapper aside {
-    flex: 2; }
-    .chaos-wrapper aside .videowrapper,
-    .chaos-wrapper aside img {
-      margin: 0 0 20px; }
-  .chaos-wrapper .image-text-container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start; }
-  .chaos-wrapper .image-text {
-    width: 49%; }
+  flex-flow: row wrap;
+}
+.chaos-wrapper img {
+  width: 100%;
+}
+.chaos-wrapper article {
+  flex: 4;
+}
+.chaos-wrapper aside {
+  flex: 2;
+}
+.chaos-wrapper aside .videowrapper,
+.chaos-wrapper aside img {
+  margin: 0 0 20px;
+}
+.chaos-wrapper .image-text-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.chaos-wrapper .image-text {
+  width: 49%;
+}
 
 .process-wrapper {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
-  justify-content: space-between; }
-  .process-wrapper img {
-    width: 32%;
-    margin-bottom: 2%; }
+  justify-content: space-between;
+}
+.process-wrapper img {
+  width: 32%;
+  margin-bottom: 2%;
+}
 
 section .documentary {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 section .documentary__element {
-  margin-bottom: 2%; }
-  section .documentary__element img {
-    width: 100%;
-    margin-bottom: 0; }
+  margin-bottom: 2%;
+}
+section .documentary__element img {
+  width: 100%;
+  margin-bottom: 0;
+}
 section .documentary__element--1 {
-  width: 100%; }
+  width: 100%;
+}
 section .documentary__element--2 {
-  width: 49%; }
+  width: 49%;
+}
 section .documentary__element--3 {
-  width: 32%; }
+  width: 32%;
+}
+
+.portfolio-page .portfolio {
+  width: 90%;
+  margin: 0 auto;
+}
+.portfolio-page img {
+  max-width: 100%;
+  padding-bottom: 2%;
+}
 
 @media screen and (max-width: 768px) {
+  .menu {
+    flex-flow: column wrap;
+  }
+  .menu li,
+.menu li:first-of-type {
+    padding: 0 20px;
+  }
+
   .chaos-page {
-    padding: 3%; }
-    .chaos-page article,
-    .chaos-page aside {
-      padding: 0;
-      flex: auto; }
-    .chaos-page h1 {
-      font-size: 48px;
-      margin: 20px 0; }
-    .chaos-page .name {
-      font-size: 24px;
-      transform: rotate(0);
-      right: 3%;
-      margin: 0;
-      top: 11px; }
-    .chaos-page p {
-      color: #e8e8e8; }
+    padding: 3%;
+  }
+  .chaos-page article,
+.chaos-page aside {
+    padding: 0;
+    flex: auto;
+  }
+  .chaos-page h1 {
+    font-size: 48px;
+    margin: 20px 0;
+  }
+  .chaos-page .name {
+    font-size: 24px;
+    transform: rotate(0);
+    right: 3%;
+    margin: 0;
+    top: 11px;
+  }
+  .chaos-page p {
+    color: #e8e8e8;
+  }
 
   .chaos-wrapper {
-    flex-flow: column wrap; } }
+    flex-flow: column wrap;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

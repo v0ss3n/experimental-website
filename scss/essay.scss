@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
 body {
   padding: 0 2%;
   font-size: 1.1em;
@@ -29,16 +30,17 @@ ul li {
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 100%;
-}
-.research-grid h3 {
-  flex: 0.7;
+
+  h3 {
+    flex: 0.7;
+  }
 }
 
 .research-block {
   width: 40%;
-}
-.research-block:not(:last-of-type) {
-  padding-right: 18px;
+  &:not(:last-of-type) {
+    padding-right: 18px;
+  }
 }
 
 .documentary__element,
@@ -73,9 +75,9 @@ ul li {
   flex-flow: row wrap;
   max-width: 1020px;
   margin: 0 auto;
-}
-.mixed-grid:last-of-type {
-  margin-bottom: 100px;
+  &:last-of-type {
+    margin-bottom: 100px;
+  }
 }
 
 .mixed-grid__article {
@@ -94,9 +96,9 @@ ul li {
   margin: 1%;
   flex: 1;
   align-self: flex-start;
-}
-.mixed-grid__img img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
 .mixed-grid h2 a {
@@ -128,19 +130,15 @@ ul li {
 
 @media screen and (max-width: 768px) {
   .research-grid,
-.mixed-grid {
+  .mixed-grid {
     flex-flow: column nowrap;
   }
-
   .mixed-grid__article,
-.mixed-grid__img,
-.videowrapper {
+  .mixed-grid__img,
+  .videowrapper {
     margin: 1% 14% 1% 1%;
   }
-
   .research-block {
     width: 100%;
   }
 }
-
-/*# sourceMappingURL=essay.css.map */

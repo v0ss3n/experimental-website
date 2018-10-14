@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Scheherazade|Krona+One|Neuton|Stalinist+One');
+@import url('https://fonts.googleapis.com/css?family=Scheherazade|Krona+One|Neuton|Stalinist+One|Libre+Baskerville');
 
 $white: #fff;
 $black: #000;
 $primary-red: #881111;
-$lavender: #d0cad8;
+$secondary-red: #d30e0e;
+$hover-link: #9d23e9;
+$lavender: #f2f0f4;
+$lilac-frame: #d6c9d6;
 $grey: #cecece;
 $light-grey: #e8e8e8;
 $green: rgb(21, 255, 0);
@@ -12,6 +15,7 @@ $ff-neuton: 'Neuton', serif;
 $ff-krona: 'Krona One', sans-serif;
 $ff-stalinist: 'Stalinist One', cursive;
 $ff-scheherazade: 'Scheherazade', serif;
+$ff-libre-baskerville: 'Libre Baskerville', serif;
 
 ::selection {
   background: $green;
@@ -40,15 +44,35 @@ h3 {
 
 .menu {
   display: flex;
+  flex-flow: row nowrap;
   list-style: none;
+  padding-left: 5%;
 
   li {
-    padding: 10px 20px;
+    padding: 10px;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    :hover,
+    :active {
+      color: $hover-link;
+    }
   }
+}
+
+.project-list__item {
+  line-height: 2em;
+  list-style: none;
 }
 
 p {
   color: $primary-red;
+}
+
+a {
+  color: $secondary-red;
 }
 
 article {
@@ -61,6 +85,7 @@ article {
 	padding-top: 25px;
 	height: 0;
 }
+
 .videowrapper iframe {
 	position: absolute;
 	top: 0;
@@ -68,6 +93,17 @@ article {
 	width: 100%;
   height: 100%;
   border: 0;
+}
+
+.still-life {
+  max-width: 300px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  z-index: -1;
+  padding: 1%;
+  background: $lilac-frame;
+  border-style: outset;
 }
 
 .chaos-page {
@@ -206,7 +242,28 @@ section {
   }
 }
 
+.portfolio-page {
+  .portfolio {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    padding-bottom: 2%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .menu {
+    flex-flow: column wrap;
+
+    li,
+    li:first-of-type {
+      padding: 0 20px; 
+    }
+  }
+  
   .chaos-page {
     padding: 3%;
 

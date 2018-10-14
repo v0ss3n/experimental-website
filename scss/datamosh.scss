@@ -7,11 +7,12 @@ body {
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
-}
-.image-grid img {
-  display: flex;
-  align-self: flex-start;
-  width: 25%;
+  
+  img {
+    display: flex;
+    align-self: flex-start;
+    width: 25%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -20,5 +21,3 @@ body {
     margin: 0 auto;
   }
 }
-
-/*# sourceMappingURL=datamosh.css.map */
