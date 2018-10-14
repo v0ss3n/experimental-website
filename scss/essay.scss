@@ -46,12 +46,14 @@ ul li {
 .documentary__element,
 .mixed-grid__img {
   position: relative;
-  width: 100%;
+
+  p {
+    display: none;
+  }
 }
 
-.documentary__element p,
-.mixed-grid__img p {
-  display: none;
+.documentary__element {
+  width: 100%;
 }
 
 .documentary__element:hover p,
