@@ -144,6 +144,7 @@ ul li {
     background: $tabcolor;
     border: 3px solid black;
     padding: 3%;
+    width: 1000px;
 
     &:not(:first-of-type) {
       display: none;

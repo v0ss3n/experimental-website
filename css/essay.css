@@ -130,6 +130,7 @@ ul li {
   background: #f2f0f4;
   border: 3px solid black;
   padding: 3%;
+  width: 1000px;
 }
 .tabs-wrapper .tab__content:not(:first-of-type) {
   display: none;
