@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
+$tabcolor: #f2f0f4;
+$background: #bdbdbd;
+
 body {
   padding: 0 2%;
   font-size: 1.1em;
+  background-color: $background;
 }
 
 h3,
@@ -37,7 +41,8 @@ ul li {
 }
 
 .research-block {
-  width: 40%;
+  width: 46%;
+
   &:not(:last-of-type) {
     padding-right: 18px;
   }
@@ -77,7 +82,6 @@ ul li {
   flex-flow: row nowrap;
   justify-content: space-between;
   max-width: 1100px;
-  margin: 0 32px 0 0;
 
   &:last-of-type {
     margin-bottom: 100px;
@@ -86,24 +90,26 @@ ul li {
 
 .mixed-grid__column {
   display: flex;
-  flex-flow: column nowrap;
-  margin: 0 auto;
+  flex-flow: column wrap;
+  max-height: 5000px;
+}
+
+.mixed-grid__article,
+.mixed-grid__img {
+  background-color: white;
+  padding: 2%;
+  margin-bottom: 1%;
+  width: 44%;
 }
 
 .mixed-grid__article {
-  background-color: white;
-  padding: 2%;
-  margin: 1%;
-  align-self: flex-start;
+  align-self: center;
   max-height: 520px;
   overflow-y: scroll;
   border-style: inset;
 }
 
 .mixed-grid__img {
-  background-color: white;
-  padding: 2%;
-  margin: 1%;
   align-self: flex-start;
   border-style: outset;
 
@@ -120,22 +126,34 @@ ul li {
   color: black;
 }
 
+.tabs-wrapper {
+  .tab__title {
+    display: inline-block;
+    background: $tabcolor;
+    border: 3px solid black;
+    border-bottom: 0;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+
+  // .tab__title--active {
+  //   background-color: red;
+  // }
+
+  .tab__content {
+    background: $tabcolor;
+    border: 3px solid black;
+    padding: 3%;
+
+    &:not(:first-of-type) {
+      display: none;
+    }
+  }
+}
+
 .marked {
   background-color: aqua;
   display: inline;
-}
-
-.prev-page,
-.next-page {
-  background: white;
-  padding: 1%;
-  float: right;
-  margin: 0;
-  width: fit-content;
-}
-
-.next-page {
-  margin: 0 32px 0 12px;
 }
 
 .videowrapper {
@@ -155,5 +173,16 @@ ul li {
   }
   .research-block {
     width: 100%;
+  }
+
+  .tabs-wrapper {
+    .tab__title {
+      display: block;
+      border-bottom: 3px solid black;
+    }
+
+    .tab__content {
+      display: none;
+    }
   }
 }
