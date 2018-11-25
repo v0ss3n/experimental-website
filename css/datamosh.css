@@ -14,9 +14,18 @@ body {
   width: 25%;
 }
 
+.image-grid--wide img {
+  width: 50%;
+}
+
 @media screen and (max-width: 768px) {
   .image-grid img {
     width: 50%;
+    margin: 0 auto;
+  }
+
+  .image-grid--wide img {
+    width: 100%;
     margin: 0 auto;
   }
 }
