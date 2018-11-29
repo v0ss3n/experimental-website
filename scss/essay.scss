@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
 
-$tabcolor: #f2f0f4;
-$background: #bdbdbd;
+$c-tabcolor: #f2f0f4;
+$c-tabcolor-hover: hsl(270, 5%, 85%);
+$c-background: #bdbdbd;
+$c-essay-link: #8538ff;
+
+$c-white: #fff;
+$c-black: #000;
+$c-pink: #e6c9c9;
+$c-red: #881111;
+
+$ff-helvetica: Helvetica, Arial, sans-serif;
+$ff-chakra-petch: 'Chakra Petch', sans-serif;
+
 
 body {
-  padding: 0 2%;
-  font-size: 1.1em;
-  background-color: $background;
+  background-color: $c-background;
 }
 
 h3,
@@ -26,7 +36,104 @@ a {
 
 ol li,
 ul li {
-  color: #881111;
+  color: $c-red;
+}
+
+.essay {
+  background: $c-black;
+  padding: 7%;
+  
+  h1 {
+    font-family: $ff-chakra-petch;
+    color: $c-white;
+    font-size: 90px;
+    margin: 0;
+    padding: 0 0 2% 0;  
+  }
+
+  h2 {
+    color: $c-pink;
+    font-size: 1.1em;
+    margin-bottom: 0;
+  }
+
+  h2 + p {
+    margin-top: 0.2em;
+  }
+
+  p {
+    font-family: $ff-helvetica;
+    color: $c-white;
+  }
+
+  sup {
+    color: $c-essay-link;
+  }
+
+  .footnote-list sup {
+    display: block;
+    font-family: $ff-helvetica;
+
+    a:last-of-type {
+      color: lime;
+    }
+  }
+
+  a {
+    color: $c-essay-link;
+
+    &.footnote {
+      text-decoration: none;
+      font-size: 0.75em;
+    }
+  }
+
+  blockquote {
+    color: $c-pink;
+    font-family: $ff-helvetica;
+  }
+
+  .essay__body {
+    width: 50%;
+    max-width: 550px;
+  }
+
+  .essay__image {
+    position: absolute;
+    width: 35%;
+    max-width: 520px;
+    right: 7%;
+  
+    img {
+      width: 100%;
+    }
+  }
+
+  .essay__image--diptych {
+    img {
+      width: 49%;
+    }
+  }
+
+  .essay__image-description {
+    font-size: 0.8em;
+    font-style: italic;
+    color: $c-pink;
+    margin: 0 0 2% 0;  
+  }
+
+  .read-more {
+    font-family: $ff-chakra-petch;
+    padding: 20px;
+    background: white;
+    border: 6px outset white;
+    position: absolute;
+    right: 7%;
+  }
+}
+
+.essay-research {
+  padding: 0 2%;
 }
 
 .research-grid {
@@ -127,11 +234,17 @@ ul li {
 
   .tab__title {
     display: inline-block;
-    background: $tabcolor;
+    background: $c-tabcolor;
     border: 3px solid black;
     border-bottom: 0;
     padding: 10px 30px;
+  }
+
+  .tab__title:hover,
+  .tab__title:focus {
     cursor: pointer;
+    background: $c-tabcolor-hover;
+    
   }
 
   // .tab__title--active {
@@ -139,7 +252,7 @@ ul li {
   // }
 
   .tab__content {
-    background: $tabcolor;
+    background: $c-tabcolor;
     border: 3px solid black;
     padding: 3%;
     width: 1000px;
@@ -161,6 +274,27 @@ ul li {
 }
 
 @media screen and (max-width: 768px) {
+  .essay {
+    h1 {
+      font-size: 40px;
+    }
+
+    .essay__body {
+      width: 100%;
+    }
+
+    .essay__image {
+      position: initial;
+      margin-bottom: 2%;
+      width: 100%;
+    }
+
+    .read-more {
+      position: initial;
+      margin: 20px 0;
+    }
+  }
+
   .research-grid,
   .mixed-grid,
   .mixed-grid__column {

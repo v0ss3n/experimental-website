@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch");
 body {
-  padding: 0 2%;
-  font-size: 1.1em;
   background-color: #bdbdbd;
 }
 
@@ -23,6 +22,85 @@ a {
 ol li,
 ul li {
   color: #881111;
+}
+
+.essay {
+  background: #000;
+  padding: 7%;
+}
+.essay h1 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #fff;
+  font-size: 90px;
+  margin: 0;
+  padding: 0 0 2% 0;
+}
+.essay h2 {
+  color: #e6c9c9;
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+.essay h2 + p {
+  margin-top: 0.2em;
+}
+.essay p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+.essay sup {
+  color: #8538ff;
+}
+.essay .footnote-list sup {
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.essay .footnote-list sup a:last-of-type {
+  color: lime;
+}
+.essay a {
+  color: #8538ff;
+}
+.essay a.footnote {
+  text-decoration: none;
+  font-size: 0.75em;
+}
+.essay blockquote {
+  color: #e6c9c9;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.essay .essay__body {
+  width: 50%;
+  max-width: 550px;
+}
+.essay .essay__image {
+  position: absolute;
+  width: 35%;
+  max-width: 520px;
+  right: 7%;
+}
+.essay .essay__image img {
+  width: 100%;
+}
+.essay .essay__image--diptych img {
+  width: 49%;
+}
+.essay .essay__image-description {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #e6c9c9;
+  margin: 0 0 2% 0;
+}
+.essay .read-more {
+  font-family: "Chakra Petch", sans-serif;
+  padding: 20px;
+  background: white;
+  border: 6px outset white;
+  position: absolute;
+  right: 7%;
+}
+
+.essay-research {
+  padding: 0 2%;
 }
 
 .research-grid {
@@ -124,7 +202,11 @@ ul li {
   border: 3px solid black;
   border-bottom: 0;
   padding: 10px 30px;
+}
+.tabs-wrapper .tab__title:hover,
+.tabs-wrapper .tab__title:focus {
   cursor: pointer;
+  background: #d9d7db;
 }
 .tabs-wrapper .tab__content {
   background: #f2f0f4;
@@ -147,6 +229,22 @@ ul li {
 }
 
 @media screen and (max-width: 768px) {
+  .essay h1 {
+    font-size: 40px;
+  }
+  .essay .essay__body {
+    width: 100%;
+  }
+  .essay .essay__image {
+    position: initial;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+  .essay .read-more {
+    position: initial;
+    margin: 20px 0;
+  }
+
   .research-grid,
 .mixed-grid,
 .mixed-grid__column {
