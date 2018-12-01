@@ -14,9 +14,12 @@ $('.tabs-wrapper').each((a, tabsWrapperEl) => {
         .show();
 
       $tabsWrapperEl
-      .find('.tab__title')
-      .eq(i)
+      .find('.tab__title--active')
+      .removeClass('tab__title--active');
+
+      $title
       .toggleClass('tab__title--active');
+
     });
   });
 });
