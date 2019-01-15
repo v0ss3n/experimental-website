@@ -1,0 +1,33 @@
+.portfolio-page .slick-prev:before,
+.portfolio-page .slick-next:before {
+  color: #15ff00;
+}
+.portfolio-page .slick-next {
+  right: 30px;
+}
+.portfolio-page .portfolio {
+  margin: 0 auto;
+  padding-bottom: 2%;
+}
+.portfolio-page img {
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .portfolio-page .portfolio {
+    width: 90%;
+  }
+  .portfolio-page .slick-prev {
+    left: -30px;
+  }
+  .portfolio-page .slick-next {
+    right: -30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-img {
+    margin-bottom: 12px;
+  }
+}
+
+/*# sourceMappingURL=portfolio-old.css.map */

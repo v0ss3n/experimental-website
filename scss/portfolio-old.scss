@@ -1,0 +1,41 @@
+$green: rgb(21, 255, 0);
+
+.portfolio-page {
+  .slick-prev:before,
+  .slick-next:before {
+    color: $green;
+  }
+
+  .slick-next {
+    right: 30px;
+  }
+
+  .portfolio {
+    margin: 0 auto;
+    padding-bottom: 2%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 769px) {
+    .portfolio {
+      width: 90%;
+    }
+
+    .slick-prev {
+      left: -30px;
+    }
+  
+    .slick-next {
+      right: -30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-img {
+    margin-bottom: 12px;
+}
+}

@@ -17,6 +17,9 @@ $ff-chakra-petch: 'Chakra Petch', sans-serif;
 
 body {
   background-color: $c-background;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 h3,

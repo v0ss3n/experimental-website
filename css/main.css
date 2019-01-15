@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Scheherazade|Krona+One|Neuton|Stalinist+One|Libre+Baskerville");
 ::selection {
   background: #15ff00;
@@ -7,8 +8,12 @@ body {
   background-color: #f2f0f4;
   font-family: "Neuton", serif;
   margin: 0;
-  padding: 0;
+  padding: 0 0 200px 0;
   -webkit-font-smoothing: antialiased;
+}
+
+.landing-page {
+  background-image: linear-gradient(black, white);
 }
 
 h1 {
@@ -72,6 +77,61 @@ article {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.photoshoot {
+  width: 100%;
+}
+.photoshoot .photo {
+  height: 80vh;
+}
+.photoshoot .photo img {
+  height: 100%;
+  width: auto;
+}
+
+.slick-prev:before {
+  content: "←";
+}
+
+.slick-next:before {
+  content: "→";
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 30px;
+  line-height: 1;
+  color: #cecece;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: 14px;
+}
+
+.slick-next {
+  right: 14px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 .still-life {
@@ -195,15 +255,6 @@ section .documentary__element--2 {
 }
 section .documentary__element--3 {
   width: 32%;
-}
-
-.portfolio-page .portfolio {
-  width: 90%;
-  margin: 0 auto;
-}
-.portfolio-page img {
-  max-width: 100%;
-  padding-bottom: 2%;
 }
 
 @media screen and (max-width: 768px) {
