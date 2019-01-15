@@ -46,9 +46,19 @@ h3 {
   color: #9d23e9;
 }
 
+.landing-page .menu li a {
+  color: #c6dce1;
+}
+
 .project-list__item {
   line-height: 2em;
   list-style: none;
+}
+
+p,
+li a,
+a {
+  font-size: 18px;
 }
 
 p {
@@ -56,7 +66,7 @@ p {
 }
 
 a {
-  color: #d30e0e;
+  color: #55211e;
 }
 
 article {

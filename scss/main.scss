@@ -3,13 +3,15 @@
 $white: #fff;
 $black: #000;
 $primary-red: #881111;
-$secondary-red: #d30e0e;
+$secondary-red: #55211e;
 $hover-link: #9d23e9;
 $lavender: #f2f0f4;
 $lilac-frame: #d6c9d6;
 $grey: #cecece;
 $light-grey: #e8e8e8;
 $green: rgb(21, 255, 0);
+$cyan: #00ffff;
+$secondary-cyan: #c6dce1;
 $slick-arrow: $grey;
 
 $ff-neuton: 'Neuton', serif;
@@ -67,9 +69,21 @@ h3 {
   }
 }
 
+.landing-page .menu {
+  li a {
+    color: $secondary-cyan;
+  }
+}
+
 .project-list__item {
   line-height: 2em;
   list-style: none;
+}
+
+p,
+li a,
+a {
+  font-size: 18px;
 }
 
 p {

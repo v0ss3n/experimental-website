@@ -30,6 +30,7 @@ $(document).ready(function() {
 
   if (window.matchMedia("(min-width: 768px)").matches) {
   $(".portfolio-images").slick({
+    autoplay: true
   });
   }
 });
