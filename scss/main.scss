@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Scheherazade|Krona+One|Neuton|Stalinist+One|Libre+Baskerville");
 
+@font-face {
+  font-family: 'f25_bank_printerregular';
+  src: url('../fonts/f25_bank_printer-webfont.woff2') format('woff2'),
+       url('../fonts/f25_bank_printer-webfont.woff') format('woff'),
+       url('../fonts/f25_bank_printer-webfont.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $white: #fff;
 $black: #000;
 $primary-red: #881111;
