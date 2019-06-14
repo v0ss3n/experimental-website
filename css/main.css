@@ -108,7 +108,8 @@ article {
   content: "→";
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   font-size: 30px;
   line-height: 1;
   color: #cecece;
@@ -124,7 +125,8 @@ article {
   right: 14px;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   z-index: 1;
   font-size: 0;
   line-height: 0;
@@ -186,7 +188,7 @@ article {
   position: absolute;
   top: 20px;
   right: 2%;
-  transform: rotate(9DEG);
+  transform: rotate(9deg);
   font-size: 48px;
 }
 .chaos-page p,
@@ -267,6 +269,37 @@ section .documentary__element--3 {
   width: 32%;
 }
 
+.two-one-container {
+  display: inline-block;
+}
+.two-one-container:first-child {
+  width: 66%;
+  display: inline-block;
+}
+.two-one-container:nth-child(2) {
+  width: 50%;
+  display: inline-block;
+}
+
+.three-one-container {
+  display: flex;
+}
+.three-one-container .three-one-container__one,
+.three-one-container .three-one-container__three {
+  display: inline-block;
+  padding: 20px;
+}
+.three-one-container .three-one-container__three {
+  width: 75%;
+}
+.three-one-container .three-one-container__one {
+  width: 33%;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
 @media screen and (max-width: 768px) {
   .menu {
     flex-flow: column wrap;
@@ -301,6 +334,14 @@ section .documentary__element--3 {
 
   .chaos-wrapper {
     flex-flow: column wrap;
+  }
+
+  .three-one-container {
+    flex-flow: row wrap;
+  }
+  .three-one-container .three-one-container__three,
+.three-one-container .three-one-container__one {
+    width: 100%;
   }
 }
 

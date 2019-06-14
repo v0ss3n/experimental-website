@@ -35,6 +35,27 @@ $(document).ready(function() {
   }
 });
 
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
+
+$(document).ready(function() {
+  $(".lookwrapper").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    vertical: true,
+    verticalSwiping: true
+  });
+});
+
+var firstScene = document.getElementById('first-scene');
+var firstParallax = new Parallax(firstScene);
+
+var secondScene = document.getElementById('second-scene');
+var secondParallax = new Parallax(secondScene);
+
+var thirdScene = document.getElementById('third-scene');
+var thirdParallax = new Parallax(thirdScene);
+
+// var fourthScene = document.getElementById('fourth-scene');
+// var fourthParallax = new Parallax(fourthScene);
 
