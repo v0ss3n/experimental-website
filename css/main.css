@@ -306,6 +306,29 @@ section .documentary__element--3 {
   filter: grayscale(100%);
 }
 
+.datamosh {
+  background-color: #828282;
+}
+
+.image-grid {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #828282;
+  overflow: scroll;
+  height: 75vh;
+}
+.image-grid img {
+  display: flex;
+  align-self: flex-start;
+  width: 25%;
+}
+
+.image-grid--wide img {
+  width: 50%;
+}
+
 @media screen and (max-width: 768px) {
   .menu {
     flex-flow: column wrap;
@@ -348,6 +371,21 @@ section .documentary__element--3 {
   .three-one-container .three-one-container__three,
 .three-one-container .three-one-container__one {
     width: 100%;
+  }
+
+  .image-grid {
+    height: 400px;
+    padding: 0 20%;
+  }
+
+  .image-grid img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .image-grid--wide img {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 

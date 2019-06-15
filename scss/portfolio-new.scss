@@ -63,12 +63,27 @@
       text-align: center;
     }
   }
+
+  .portfolio .page3 {
+    width: 100%;
+    margin: 0 0 -10% 0;
+
+    img {
+      max-width: 100%;
+    }
+
+    .teapot {
+      animation: want-some-tea 3s ease-in-out 1s infinite alternate;
+  
+    }
+  }
   
   .page1,
   .page2,
   .type {
     display: flex;
     flex-flow: row nowrap;
+    align-items: flex-start;
     width: 100vw;
     
     > div {
@@ -83,6 +98,20 @@
     
     img {
       width: 100%;
+    }
+  }
+
+  .page4 {
+    background-image: url("../img/portfolio/tinguely1.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    filter: grayscale(1);
+
+    img {
+      width: 48%;
+      padding: 12%;
     }
   }
   
@@ -145,11 +174,21 @@
     100% { transform: translate(-100%, 0); }
   }
   
+  @keyframes want-some-tea {
+    0%    { transform: rotate(0deg); }
+    100%  { transform: rotate(30deg); }
+  }
+
   .type {
     color: white;
 
     img {
       width: 100vw;
+    }
+
+    .subtitle {
+      position: absolute;
+      right: 20px;
     }
   }
   .type__girl {
@@ -158,20 +197,33 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-    height: 120vh;
+    height: 125vh;
   }
   
   .type__girl:hover,
   .type__girl:active {
     background-image: url("../img/portfolio/type--hover.png");
   }
-  
-  #fourth-scene {
+
+  .type__girl-wrapper {
+    height: 51vh;
   }
-  
+
   @media screen and (max-width: 768px) {
     h2,
     .page1 h3 {
       font-size: 32px;
     }
+
+    h4.subtitle {
+      font-size: 30px;
+    }
   }
+
+  @media screen and (max-width: 321px) {
+    h2,
+    .page1 h3 {
+      font-size: 24px;
+    }
+  }
+  

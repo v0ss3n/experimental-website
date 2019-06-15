@@ -59,3 +59,5 @@ var thirdParallax = new Parallax(thirdScene);
 var fourthScene = document.getElementById('fourth-scene');
 var fourthParallax = new Parallax(fourthScene);
 
+var fourthScene = document.getElementById('fifth-scene');
+var fourthParallax = new Parallax(fifthScene);
