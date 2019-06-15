@@ -87,6 +87,10 @@ header {
   width: 100%;
 }
 
+.page2 img {
+  margin-bottom: -15px;
+}
+
 .page4 {
   background-image: url("../img/portfolio/tinguely1.gif");
   background-size: cover;
