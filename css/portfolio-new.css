@@ -63,7 +63,8 @@ header {
 
 .page1,
 .page2,
-.type {
+.type,
+.page5 .scene {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
@@ -71,24 +72,32 @@ header {
 }
 .page1 > div,
 .page2 > div,
-.type > div {
+.type > div,
+.page5 .scene > div {
   box-sizing: border-box;
   width: 100%;
   flex: none;
 }
 .page1 .scene,
 .page2 .scene,
-.type .scene {
+.type .scene,
+.page5 .scene .scene {
   margin-left: -100%;
 }
 .page1 img,
 .page2 img,
-.type img {
+.type img,
+.page5 .scene img {
   width: 100%;
 }
 
 .page2 img {
-  margin-bottom: -15px;
+  margin-bottom: -16px;
+}
+
+.page3 {
+  background: #b6a8b4;
+  background: linear-gradient(0deg, #000000 0%, #C6BCD7 50%, #f2f0f4 100%);
 }
 
 .page4 {
@@ -201,6 +210,10 @@ header {
 
 .type__girl-wrapper {
   height: 51vh;
+}
+
+img.cloud {
+  opacity: 0.55;
 }
 
 @media screen and (max-width: 768px) {

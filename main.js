@@ -59,5 +59,22 @@ var thirdParallax = new Parallax(thirdScene);
 var fourthScene = document.getElementById('fourth-scene');
 var fourthParallax = new Parallax(fourthScene);
 
-var fourthScene = document.getElementById('fifth-scene');
-var fourthParallax = new Parallax(fifthScene);
+var fifthScene = document.getElementById('fifth-scene');
+var fifthParallax = new Parallax(fifthScene);
+
+var sixthScene = document.getElementById('sixth-scene');
+var sixthParallax = new Parallax(sixthScene);
+
+jQuery(document).ready(function(){
+  $(window).scroll(function(e){
+  	parallaxScroll();
+	});
+	 
+	function parallaxScroll(){
+		var scrolled = $(window).scrollTop();
+		$('#parallax-bg-1').css('top',(0-(scrolled*.25))+'px');
+		$('#parallax-bg-2').css('top',(0-(scrolled*.4))+'px');
+		$('#parallax-bg-3').css('top',(0-(scrolled*.75))+'px');
+	}
+ 
+ }); 
