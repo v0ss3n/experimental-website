@@ -316,8 +316,6 @@ section .documentary__element--3 {
   display: flex;
   flex-flow: row wrap;
   background-color: #828282;
-  overflow: scroll;
-  height: 75vh;
 }
 .image-grid img {
   display: flex;

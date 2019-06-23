@@ -33,10 +33,7 @@ $(document).ready(function() {
     autoplay: true
   });
   }
-});
 
-
-$(document).ready(function() {
   $(".lookwrapper").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -45,7 +42,43 @@ $(document).ready(function() {
     vertical: true,
     verticalSwiping: true
   });
+
+  $(".look__specs-carousel").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000
+  });
+
+    $(".moulage-carousel1").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2700
+    });
+
+      $(".moulage-carousel2").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+
+      $(".moulage-carousel3").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3500
+      });
+
+      $(".moulage-carousel4").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3100
+      });
 });
+
 
 var firstScene = document.getElementById('first-scene');
 var firstParallax = new Parallax(firstScene);
@@ -62,8 +95,32 @@ var fourthParallax = new Parallax(fourthScene);
 var fifthScene = document.getElementById('fifth-scene');
 var fifthParallax = new Parallax(fifthScene);
 
-var sixthScene = document.getElementById('sixth-scene');
-var sixthParallax = new Parallax(sixthScene);
+// var sixthScene = document.getElementById('sixth-scene');
+// var sixthParallax = new Parallax(sixthScene);
+
+var moulageScene1 = document.getElementById('moulage-scene1');
+var moulageParallax1 = new Parallax(moulageScene1);
+
+var moulageScene2 = document.getElementById('moulage-scene2');
+var moulageParallax2 = new Parallax(moulageScene2);
+
+var moulageScene3 = document.getElementById('moulage-scene3');
+var moulageParallax3 = new Parallax(moulageScene3);
+
+var moulageScene4 = document.getElementById('moulage-scene4');
+var moulageParallax4 = new Parallax(moulageScene4);
+
+var moulageScene5 = document.getElementById('moulage-scene5');
+var moulageParallax5 = new Parallax(moulageScene5);
+
+var moulageScene6 = document.getElementById('moulage-scene6');
+var moulageParallax6 = new Parallax(moulageScene6);
+
+var moulageScene7 = document.getElementById('moulage-scene7');
+var moulageParallax7 = new Parallax(moulageScene7);
+
+var moulageScene8 = document.getElementById('moulage-scene8');
+var moulageParallax8 = new Parallax(moulageScene8);
 
 jQuery(document).ready(function(){
   $(window).scroll(function(e){
