@@ -146,7 +146,7 @@
   
   .moulage3 .scene {
     width: 70%;
-    margin: 0 auto;
+    margin: 4% auto;
   }
   
   .page2 img {
@@ -165,11 +165,13 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    filter: grayscale(1);
-    
+    filter: invert(1);
+     
     img {
       width: 48%;
-      padding: 12%;
+      padding: 25% 0;
+      margin: 0 auto;
+      filter: invert(1);
     }
   }
   
@@ -196,7 +198,7 @@
     }
     
     #second-scene {
-      top: 150px;
+      top: 10vw;
       z-index: -1;
     }
     
@@ -208,6 +210,16 @@
     .inspiration {
       position: absolute;
       margin-bottom: -8%;
+    }
+
+    .chaosmachine.marquee {
+      h4 {
+        animation-duration: 12s;
+      }
+
+      a {
+        font-size: inherit;
+      }
     }
     
     .marquee {
@@ -415,6 +427,7 @@
         padding: 10% 0;
         height: 800px;
         align-content: center;
+        max-width: 100vw;
         
         img {
           align-self: center;
@@ -581,7 +594,7 @@
         width: 44%;
         max-width: 500px;
         margin: 4%;
-        left: 55%;
+        left: 47%;
         margin-top: -30%;
       }
       
@@ -598,6 +611,10 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-around;
+      background: url("../img/portfolio/backgrounds/tl-bg.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       
       video {
         width: 25%;
@@ -692,7 +709,7 @@
       
       .moulage3 .scene {
         width: 90%;
-        margin: 0 auto;
+        margin: 3% auto;
       }
     }
     
