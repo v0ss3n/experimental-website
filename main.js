@@ -190,3 +190,65 @@ function toggleVisibility2() {
   }
 }
 
+function toggleVisibility3() {
+  var x = document.getElementById("show-look3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleVisibility4() {
+  var x = document.getElementById("show-look4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleVisibility5() {
+  var x = document.getElementById("show-look5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleVisibility6() {
+  var x = document.getElementById("show-look6");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleVisibility7() {
+  var x = document.getElementById("show-look7");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleVisibility8() {
+  var x = document.getElementById("show-look8");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleVisibility9() {
+  var x = document.getElementById("show-look9");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

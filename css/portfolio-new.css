@@ -731,10 +731,11 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 19% 0;
+  filter: invert(1) grayscale(1);
 }
 .portfolio-page3 section h2 {
   font-size: 10vw;
-  color: #bcd3f8;
+  color: white;
   font-family: "Stalinist One", cursive;
   text-shadow: 13px 9px 19px #090909;
 }
@@ -783,6 +784,34 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 .phone #phone-button2 {
   top: 12vw;
   left: 24vw;
+}
+.phone #phone-button3 {
+  top: 11vw;
+  left: 27vw;
+}
+.phone #phone-button4 {
+  top: 15.5vw;
+  left: 21.5vw;
+}
+.phone #phone-button5 {
+  top: 15vw;
+  left: 25.5vw;
+}
+.phone #phone-button6 {
+  top: 14.5vw;
+  left: 29vw;
+}
+.phone #phone-button7 {
+  top: 19vw;
+  left: 23vw;
+}
+.phone #phone-button8 {
+  top: 18.5vw;
+  left: 26.5vw;
+}
+.phone #phone-button9 {
+  top: 18vw;
+  left: 30vw;
 }
 
 @keyframes flicker {
