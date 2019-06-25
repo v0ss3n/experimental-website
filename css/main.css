@@ -371,16 +371,6 @@ section .documentary__element--3 {
     width: 100%;
   }
 
-  .image-grid {
-    height: 400px;
-    padding: 0 20%;
-  }
-
-  .image-grid img {
-    width: 50%;
-    margin: 0 auto;
-  }
-
   .image-grid--wide img {
     width: 100%;
     margin: 0 auto;
