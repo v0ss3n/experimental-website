@@ -160,95 +160,24 @@ if (moulageScene8) {
 // 		$('#parallax-bg-2').css('top',(0-(scrolled*.4))+'px');
 // 		$('#parallax-bg-3').css('top',(0-(scrolled*.75))+'px');
 // 	}
- 
-//  }); 
 
- function toggleVisibility() {
-  var x = document.getElementById("look__process1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+//  });
 
-function toggleVisibility1() {
-  var x = document.getElementById("show-look1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
 
-function toggleVisibility2() {
-  var x = document.getElementById("show-look2");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+$(".phone-button").each((i, buttonEl) => {
+  const $buttonEl = $(buttonEl);
+  $buttonEl.on("click", () => {
+    const $lookswrapper = $(".show-looks");
+    const $target = $lookswrapper
+      .find(".show-look")
+      .eq(i);
 
-function toggleVisibility3() {
-  var x = document.getElementById("show-look3");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+    $lookswrapper.find(".show-look").hide().removeClass(".show-look--active");
+    $target.show().addClass("show-look--active");
 
-function toggleVisibility4() {
-  var x = document.getElementById("show-look4");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+    $('html, body').animate({
+      scrollTop: $target.offset().top
+    }, 700);
+  });
+});
 
-function toggleVisibility5() {
-  var x = document.getElementById("show-look5");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function toggleVisibility6() {
-  var x = document.getElementById("show-look6");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function toggleVisibility7() {
-  var x = document.getElementById("show-look7");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function toggleVisibility8() {
-  var x = document.getElementById("show-look8");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function toggleVisibility9() {
-  var x = document.getElementById("show-look9");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
