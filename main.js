@@ -79,59 +79,114 @@ $(document).ready(function() {
       });
 });
 
-
 var firstScene = document.getElementById('first-scene');
-var firstParallax = new Parallax(firstScene);
+if (firstScene) {
+  var firstParallax = new Parallax(firstScene);
+}
 
 var secondScene = document.getElementById('second-scene');
-var secondParallax = new Parallax(secondScene);
+if (secondScene) {
+  var secondParallax = new Parallax(secondScene);
+}
 
 var thirdScene = document.getElementById('third-scene');
-var thirdParallax = new Parallax(thirdScene);
+if (thirdScene) {
+  var thirdParallax = new Parallax(thirdScene);
+}
 
 var fourthScene = document.getElementById('fourth-scene');
-var fourthParallax = new Parallax(fourthScene);
+if (fourthScene) {
+  var fourthParallax = new Parallax(fourthScene);
+}
 
 var fifthScene = document.getElementById('fifth-scene');
-var fifthParallax = new Parallax(fifthScene);
+if (fifthScene) {
+  var fifthParallax = new Parallax(fifthScene);
+}
 
-// var sixthScene = document.getElementById('sixth-scene');
-// var sixthParallax = new Parallax(sixthScene);
+var sixthScene = document.getElementById('sixth-scene');
+if (sixthScene) {
+  var sixthParallax = new Parallax(sixthScene);
+}
 
 var moulageScene1 = document.getElementById('moulage-scene1');
-var moulageParallax1 = new Parallax(moulageScene1);
+if (moulageScene1) {
+  var moulageParallax1 = new Parallax(moulageScene1);
+}
 
 var moulageScene2 = document.getElementById('moulage-scene2');
-var moulageParallax2 = new Parallax(moulageScene2);
+if (moulageScene2) {
+  var moulageParallax2 = new Parallax(moulageScene2);
+}
 
 var moulageScene3 = document.getElementById('moulage-scene3');
-var moulageParallax3 = new Parallax(moulageScene3);
+if (moulageScene3) {
+  var moulageParallax3 = new Parallax(moulageScene3);
+}
 
 var moulageScene4 = document.getElementById('moulage-scene4');
-var moulageParallax4 = new Parallax(moulageScene4);
+if (moulageScene4) {
+  var moulageParallax4 = new Parallax(moulageScene4);
+}
 
 var moulageScene5 = document.getElementById('moulage-scene5');
-var moulageParallax5 = new Parallax(moulageScene5);
+if (moulageScene5) {
+  var moulageParallax5 = new Parallax(moulageScene5);
+}
 
 var moulageScene6 = document.getElementById('moulage-scene6');
-var moulageParallax6 = new Parallax(moulageScene6);
+if (moulageScene6) {
+  var moulageParallax6 = new Parallax(moulageScene6);
+}
 
 var moulageScene7 = document.getElementById('moulage-scene7');
-var moulageParallax7 = new Parallax(moulageScene7);
+if (moulageScene7) {
+  var moulageParallax7 = new Parallax(moulageScene7);
+}
 
 var moulageScene8 = document.getElementById('moulage-scene8');
-var moulageParallax8 = new Parallax(moulageScene8);
+if (moulageScene8) {
+  var moulageParallax8 = new Parallax(moulageScene8);
+}
 
-jQuery(document).ready(function(){
-  $(window).scroll(function(e){
-  	parallaxScroll();
-	});
+// jQuery(document).ready(function(){
+//   $(window).scroll(function(e){
+//   	parallaxScroll();
+// 	});
 	 
-	function parallaxScroll(){
-		var scrolled = $(window).scrollTop();
-		$('#parallax-bg-1').css('top',(0-(scrolled*.25))+'px');
-		$('#parallax-bg-2').css('top',(0-(scrolled*.4))+'px');
-		$('#parallax-bg-3').css('top',(0-(scrolled*.75))+'px');
-	}
+// 	function parallaxScroll(){
+// 		var scrolled = $(window).scrollTop();
+// 		$('#parallax-bg-1').css('top',(0-(scrolled*.25))+'px');
+// 		$('#parallax-bg-2').css('top',(0-(scrolled*.4))+'px');
+// 		$('#parallax-bg-3').css('top',(0-(scrolled*.75))+'px');
+// 	}
  
- }); 
+//  }); 
+
+ function toggleVisibility() {
+  var x = document.getElementById("look__process1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleVisibility1() {
+  var x = document.getElementById("show-look1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function toggleVisibility2() {
+  var x = document.getElementById("show-look2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+

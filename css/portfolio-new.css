@@ -3,6 +3,11 @@ body {
   hyphens: auto;
 }
 
+section h2 {
+  font-size: 15vw;
+  margin: 10% 1%;
+}
+
 h5 {
   font-size: 32px;
   font-family: "f25_bank_printerregular";
@@ -95,7 +100,6 @@ header {
 .type,
 .page5 .scene,
 .color,
-.look__page,
 .sketch-bar,
 .moulage3 .scene {
   display: flex;
@@ -108,7 +112,6 @@ header {
 .type > div,
 .page5 .scene > div,
 .color > div,
-.look__page > div,
 .sketch-bar > div,
 .moulage3 .scene > div {
   box-sizing: border-box;
@@ -117,35 +120,24 @@ header {
 }
 .page1 .scene,
 .page1 .color-wrapper,
-.page1 .look,
 .page1 .sketch-bar-links,
 .page2 .scene,
 .page2 .color-wrapper,
-.page2 .look,
 .page2 .sketch-bar-links,
 .type .scene,
 .type .color-wrapper,
-.type .look,
 .type .sketch-bar-links,
 .page5 .scene .scene,
 .page5 .scene .color-wrapper,
-.page5 .scene .look,
 .page5 .scene .sketch-bar-links,
 .color .scene,
 .color .color-wrapper,
-.color .look,
 .color .sketch-bar-links,
-.look__page .scene,
-.look__page .color-wrapper,
-.look__page .look,
-.look__page .sketch-bar-links,
 .sketch-bar .scene,
 .sketch-bar .color-wrapper,
-.sketch-bar .look,
 .sketch-bar .sketch-bar-links,
 .moulage3 .scene .scene,
 .moulage3 .scene .color-wrapper,
-.moulage3 .scene .look,
 .moulage3 .scene .sketch-bar-links {
   margin-left: -100%;
 }
@@ -154,7 +146,6 @@ header {
 .type img,
 .page5 .scene img,
 .color img,
-.look__page img,
 .sketch-bar img,
 .moulage3 .scene img {
   width: 100%;
@@ -311,6 +302,16 @@ img.cloud {
   opacity: 0.55;
 }
 
+.sketches {
+  margin-top: -17%;
+  width: 110vw;
+  margin-left: -5vw;
+}
+.sketches img {
+  width: 100%;
+  position: relative;
+}
+
 .sketch-bar {
   width: 100vw;
   height: 26vw;
@@ -319,11 +320,18 @@ img.cloud {
   width: 100%;
   height: auto;
 }
+.sketch-bar .sketch-bar-links:hover::after {
+  content: "click to jump to look";
+  font-family: "Chakra Petch", sans-serif;
+  position: absolute;
+  right: 0;
+}
 .sketch-bar .sketch-bar-links {
   display: flex;
   flex-flow: row nowrap;
   height: inherit;
   padding: 0 4%;
+  z-index: 2;
 }
 .sketch-bar .sketch-bar-links div {
   width: 9%;
@@ -335,6 +343,76 @@ img.cloud {
 .sketch-bar .sketch-bar-links div a {
   display: block;
   height: inherit;
+}
+
+.look__page {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10%;
+  width: 100vw;
+  position: relative;
+}
+.look__page .look-button {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-family: "Stalinist One", cursive;
+  background: white;
+  font-size: 1.8vw;
+  z-index: 2;
+}
+.look__page .look-button:hover {
+  background-color: #450606;
+  box-shadow: 0px 15px 20px #45130f;
+  color: #fff;
+  cursor: pointer;
+}
+.look__page .look__process {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+}
+.look__page .look__process img {
+  width: 100%;
+}
+
+#look__page1 {
+  background-image: url("../img/portfolio/backgrounds/bg1.jpg");
+}
+
+#look__page2 {
+  background-image: url("../img/portfolio/backgrounds/bg2.jpg");
+}
+
+#look__page3 {
+  background-image: url("../img/portfolio/backgrounds/bg3.jpg");
+}
+
+#look__page4 {
+  background-image: url("../img/portfolio/backgrounds/bg4.jpg");
+}
+
+#look__page5 {
+  background-image: url("../img/portfolio/backgrounds/bg5.jpg");
+}
+
+#look__page6 {
+  background-image: url("../img/portfolio/backgrounds/bg6.jpg");
+}
+
+#look__page7 {
+  background-image: url("../img/portfolio/backgrounds/bg7.jpg");
+}
+
+#look__page8 {
+  background-image: url("../img/portfolio/backgrounds/bg8.jpg");
+}
+
+#look__page9 {
+  background-image: url("../img/portfolio/backgrounds/bg9.jpg");
 }
 
 .look__background {
@@ -352,6 +430,7 @@ img.cloud {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  height: 100%;
 }
 .look__wrapper img {
   width: 100%;
@@ -367,18 +446,22 @@ img.cloud {
 }
 .look__wrapper .look__illustration .design {
   animation: bounce 1s infinite;
-  max-width: 550px;
+  max-width: 520px;
 }
 .look__wrapper .look__specs {
-  width: 38%;
+  width: 36%;
+  max-width: 400px;
   padding: 0 5%;
   margin: 0 -10% 0 -5%;
-  background: #ebfdff94;
-  border: 5px solid black;
+  background: #f5feff;
+  box-shadow: 0 0 15px 15px #f5feff;
 }
 
 .even {
   flex-direction: row-reverse;
+}
+.even .look-button {
+  right: 2%;
 }
 
 .look__text {
@@ -472,11 +555,6 @@ img.cloud {
   background-image: url("../img/portfolio/backgrounds/cube8-bg.jpg");
 }
 
-.datamosh .image-grid {
-  max-height: 1000px;
-  overflow: scroll;
-}
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -539,6 +617,8 @@ img.cloud {
   width: 100vw;
   padding-bottom: 10%;
   background: url("../img/portfolio/backgrounds/striped-bg.png");
+  background-position: center;
+  background-repeat: repeat;
 }
 .portfolio .moulages .moulage-carousel1,
 .portfolio .moulages .moulage-carousel2,
@@ -579,7 +659,7 @@ img.cloud {
   box-shadow: 13px 13px 9px #adadada8;
 }
 
-.moulages2 {
+section.moulages2 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -587,9 +667,107 @@ img.cloud {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 10% 0;
 }
-.moulages2 video {
+section.moulages2 video {
   width: 25%;
+}
+
+.prev-next-page {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.arrow {
+  width: 24%;
+  margin: 2%;
+}
+
+.arrow-prev {
+  transform: scaleX(-1);
+}
+
+.moulage-grid {
+  max-width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  filter: grayscale(1);
+}
+.moulage-grid img {
+  display: flex;
+  align-self: flex-start;
+  width: 19%;
+  padding: 1%;
+  margin: 2%;
+}
+
+.portfolio-page2 section h2,
+.portfolio-page2 section h3 {
+  font-family: "Stalinist One", cursive;
+}
+.portfolio-page2 section h3 {
+  font-size: 10vw;
+}
+.portfolio-page3 .title-designs {
+  background: url("../img/portfolio/backgrounds/designs-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 19% 0;
+}
+.portfolio-page3 section h2 {
+  font-size: 10vw;
+  color: #bcd3f8;
+  font-family: "Stalinist One", cursive;
+  text-shadow: 13px 9px 19px #090909;
+}
+
+.portfolio-page4 .show-pictures-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.portfolio-page4 .show-pictures-wrapper div {
+  width: 30%;
+  padding: 2%;
+}
+.show-looks {
+  width: 100vw;
+}
+.show-looks .subtitle {
+  margin: 0 2%;
+}
+.show-looks .show-look img {
+  width: 100%;
+}
+
+.phone-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.phone {
+  width: 40vw;
+  position: relative;
+}
+.phone .phone-base img {
+  width: 100%;
+}
+.phone .phone-button {
+  position: absolute;
+  cursor: pointer;
+  padding: 1.8vw;
+  z-index: 20;
+}
+.phone #phone-button1 {
+  top: 12vw;
+  left: 20.5vw;
+}
+.phone #phone-button2 {
+  top: 12vw;
+  left: 24vw;
 }
 
 @keyframes flicker {
@@ -612,6 +790,14 @@ img.cloud {
   }
   100% {
     filter: blur(30px) grayscale(1);
+  }
+}
+@keyframes unblur {
+  0% {
+    filter: blur(30px);
+  }
+  100% {
+    filter: blur(0);
   }
 }
 @keyframes blur-flicker {
@@ -651,6 +837,14 @@ img.cloud {
     font-size: 32px;
   }
 
+  section h2 {
+    font-size: 15vw;
+  }
+
+  .portfolio-page3 section h2 {
+    font-size: 10vw;
+  }
+
   h4.subtitle {
     font-size: 30px;
   }
@@ -677,11 +871,30 @@ img.cloud {
     width: 90%;
     margin: 3% auto;
   }
+
+  .phone {
+    transform: scale(2.5);
+  }
+
+  section.phone-wrapper {
+    margin: 32% 0 0;
+  }
+  section.phone-wrapper h5 {
+    margin: 30% 2% 0;
+  }
 }
 @media screen and (max-width: 321px) {
   h2,
 .page1 h3 {
     font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 15vw;
+  }
+
+  .portfolio-page3 section h2 {
+    font-size: 10vw;
   }
 }
 
