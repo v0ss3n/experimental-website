@@ -13,6 +13,31 @@ section h2 {
   margin: 10% 1%;
 }
 
+h5 a {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+h5 a:hover, h5 a:focus {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: 0.3em;
+}
+
+header h2 {
+  color: black;
+  font-family: "Krona One", sans-serif;
+}
+header h2 a {
+  font-size: 24px;
+  text-decoration: none;
+}
+header h2 a:hover, header h2 a:focus {
+  text-shadow: 2px 2px;
+}
+
 h5 {
   font-size: 32px;
   font-family: "f25_bank_printerregular";
@@ -706,6 +731,28 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   margin-top: -30%;
 }
 
+.lamps {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  z-index: -1;
+  background: linear-gradient(0, transparent, black);
+}
+.lamps div {
+  width: 24%;
+  margin: 0 4%;
+}
+.lamps div img {
+  width: 100%;
+}
+.lamps div:first-of-type {
+  transform: scaleX(-1);
+  width: 20%;
+}
+
 .glitch {
   position: relative;
 }
@@ -776,6 +823,7 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   display: flex;
   flex-flow: row wrap;
   filter: grayscale(1);
+  transform: skew(-7deg, -7deg);
 }
 .moulage-grid img {
   display: flex;
@@ -783,18 +831,15 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   width: 19%;
   padding: 1%;
   margin: 2%;
+  background: white;
+}
+.moulage-grid img:hover, .moulage-grid img:focus {
+  transform: scale(1.25);
+  box-shadow: 5px 10px 10px darkgrey;
 }
 
-#moulage-grid-container1,
 #moulage-grid-container2 {
-  width: 90vw;
-  margin: 0 auto;
-  perspective: 90vh;
-}
-
-#moulage-grid1,
-#moulage-grid2 {
-  transition: transform 0.5s;
+  margin: -12%;
 }
 
 .portfolio-page2 section h2,
@@ -826,6 +871,9 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   text-shadow: 13px 9px 19px #090909;
 }
 
+.portfolio-page4 header a {
+  color: white;
+}
 .portfolio-page4 .show-pictures-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -843,7 +891,7 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 }
 .portfolio-page4 .try-again a:hover,
 .portfolio-page4 .try-again a:focus {
-  color: #170a09;
+  color: black;
 }
 
 .show-looks {
