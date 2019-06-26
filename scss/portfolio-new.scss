@@ -771,7 +771,6 @@
         width: 60%;
       }
     }
-
   }
   
   .moulages3 {
@@ -779,6 +778,57 @@
     // background: linear-gradient(0deg, rgba(240,240,240,0.5187324929971988) 9%, rgba(61,61,61,1) 28%, rgba(0,0,0,1) 48%, rgba(50,50,50,1) 70%, rgba(166,166,166,0.5131302521008403) 91%);    
   }
   
+  .glitch {    
+    position: relative;
+    &:before, &:after {
+      display: block;
+      content: attr(data-glitch);
+      text-transform: uppercase;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .8;
+    } &:after {
+      color: rgb(0, 255, 0);
+      z-index: -2;
+    } &:before {
+      color: rgb(0, 0, 255);
+      z-index: -1;
+    }
+    
+      &:before {
+        animation: glitch 0.5s cubic-bezier(.25, .46, .45, .94) both infinite;
+      }
+      &:after {
+        animation: glitch 1s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+      }
+    
+  }
+  
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(0)
+    }
+    20% {
+      transform: translate(-5px, 5px)
+    }
+    40% {
+      transform: translate(-5px, -5px)
+    }
+    60% {
+      transform: translate(5px, 5px)
+    }
+    80% {
+      transform: translate(5px, -5px)
+    }
+    to {
+      transform: translate(0)
+    }
+  }
+
   .prev-next-page {
     display: flex;
     flex-flow: row nowrap;

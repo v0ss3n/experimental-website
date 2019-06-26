@@ -706,6 +706,55 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   margin-top: -30%;
 }
 
+.glitch {
+  position: relative;
+}
+.glitch:before, .glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+.glitch:after {
+  color: lime;
+  z-index: -2;
+}
+.glitch:before {
+  color: blue;
+  z-index: -1;
+}
+.glitch:before {
+  animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+.glitch:after {
+  animation: glitch 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
 .prev-next-page {
   display: flex;
   flex-flow: row nowrap;
