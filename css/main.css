@@ -73,6 +73,7 @@ p {
 
 a {
   color: #55211e;
+  z-index: 2;
 }
 
 article {

@@ -309,11 +309,12 @@ img.cloud {
 
 .sketches {
   margin-top: -17%;
-  width: 110vw;
+  width: 105vw;
   margin-left: -5vw;
+  overflow: hidden;
 }
 .sketches img {
-  width: 100%;
+  width: 110%;
   position: relative;
 }
 
@@ -337,13 +338,15 @@ img.cloud {
   height: inherit;
   padding: 0 4%;
   z-index: 2;
+  box-shadow: 4px 14px 14px black;
 }
 .sketch-bar .sketch-bar-links div {
   width: 9%;
   height: inherit;
 }
 .sketch-bar .sketch-bar-links div:hover {
-  border-bottom: 5px solid black;
+  border-bottom: 4px solid black;
+  box-sizing: border-box;
 }
 .sketch-bar .sketch-bar-links div a {
   display: block;
@@ -361,11 +364,12 @@ img.cloud {
 }
 .look__page .look-button {
   position: absolute;
-  top: 2%;
-  left: 2%;
+  top: 3%;
+  left: 3%;
   font-family: "Stalinist One", cursive;
   background: white;
-  font-size: 1.8vw;
+  box-shadow: 0px 15px 20px #1b1b1b;
+  font-size: 18px;
   z-index: 2;
 }
 .look__page .look-button:hover {
@@ -373,6 +377,10 @@ img.cloud {
   box-shadow: 0px 15px 20px #45130f;
   color: #fff;
   cursor: pointer;
+}
+.look__page .look-button--even {
+  right: 3%;
+  left: initial;
 }
 .look__page .look__process {
   position: absolute;
@@ -456,8 +464,8 @@ img.cloud {
 .look__wrapper .look__specs {
   width: 36%;
   max-width: 400px;
-  padding: 0 5%;
-  margin: 0 -10% 0 -5%;
+  padding: 0 3%;
+  margin: 0 -5%;
   background: #f5feff;
   box-shadow: 0 0 15px 15px #f5feff;
 }
@@ -472,20 +480,26 @@ img.cloud {
 .look__text {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+}
+.look__text div {
+  width: 50%;
 }
 .look__text p {
   font-family: "Stalinist One", cursive;
   color: black;
-  text-align: left;
   font-style: italic;
   text-align: right;
-  width: 50%;
-  margin: -10% 2% 0;
+  width: 36%;
+  max-width: 400px;
+  background: #f2f0f4;
+  padding: 2% 3%;
+  text-decoration: underline;
+  margin: -7% -5%;
 }
 
 .even + .look__text {
   justify-content: flex-start;
+  flex-direction: row-reverse;
 }
 .even + .look__text p {
   text-align: left;
@@ -724,6 +738,9 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 .portfolio-page2 .datamosh .image-grid {
   max-width: 100vw;
 }
+.portfolio-page2 .datamosh .image-grid img {
+  width: 20%;
+}
 
 .portfolio-page3 .title-designs {
   background: url("../img/portfolio/backgrounds/designs-bg.jpg");
@@ -773,9 +790,11 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 }
 .phone .phone-button {
   position: absolute;
-  cursor: pointer;
   padding: 1.8vw;
   z-index: 20;
+}
+.phone .phone-button:hover, .phone .phone-button:focus {
+  cursor: pointer;
 }
 .phone #phone-button1 {
   top: 12vw;
@@ -905,6 +924,13 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 
   .look__text {
     width: 100%;
+  }
+  .look__text div {
+    display: none;
+  }
+  .look__text p {
+    width: 100%;
+    margin: 6% 0 4%;
   }
 
   .even {
