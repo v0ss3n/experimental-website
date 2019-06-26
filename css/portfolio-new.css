@@ -842,6 +842,28 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   margin: -12%;
 }
 
+.moulage-group-container {
+  position: relative;
+}
+.moulage-group-container .moulage-hover-img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.moulage-group-container .moulage-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: 50%;
+  cursor: pointer;
+}
+.moulage-group-container .moulage-hover:hover .moulage-hover-img, .moulage-group-container .moulage-hover:focus .moulage-hover-img {
+  display: block;
+}
+
 .portfolio-page2 section h2,
 .portfolio-page2 section h3 {
   font-family: "Stalinist One", cursive;

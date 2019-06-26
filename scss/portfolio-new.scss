@@ -929,7 +929,34 @@
       #moulage-grid-container2 {
         margin: -12%;
     }
-    
+
+    .moulage-group-container {
+      position: relative;
+
+      .moulage-hover-img {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+    .moulage-hover {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40%;
+      height: 50%;
+      cursor: pointer;
+
+      &:hover .moulage-hover-img,
+      &:focus .moulage-hover-img {
+        display: block;
+      }
+    }
+
+  }
+
       .portfolio-page2 {
         section h2, 
         section h3 {
