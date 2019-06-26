@@ -307,7 +307,7 @@
     }
     
     .type__girl-wrapper {
-      height: 51vh;
+      // height: 51vh;
     }
     
     img.cloud {
@@ -552,6 +552,10 @@
     }
     
     .prints {
+      h5 {
+        display: none;
+      }
+
       .cube-bg {
         height: inherit;
         width: 100vw;
@@ -560,8 +564,7 @@
       
       .image-grid {
         background: none;
-        padding: 10% 0;
-        height: 800px;
+        height: 1000px;
         align-content: center;
         max-width: 100vw;
         
@@ -688,6 +691,7 @@
         display: block;
         position: absolute;
         right: 10%;
+        z-index: 2;
       }
     }
     
@@ -703,23 +707,21 @@
     .moulage-carousel3,
     .moulage-carousel4 {
       position: relative;
-      // filter: grayscale(1);
+      filter: grayscale(1);
       
       .slick-arrow {
         visibility: hidden;
       }
     }
     
-    // .moulage-carousel1:hover,
-    // .moulage-carousel1:focus,
-    // .moulage-carousel2:hover,
-    // .moulage-carousel2:focus,
-    // .moulage-carousel3:hover,
-    // .moulage-carousel3:focus,
-    // .moulage-carousel4:hover,
-    // .moulage-carousel4:focus {
-    //   filter: none;
-    // }
+    .moulage-carousel1:hover,
+    .moulage-carousel1:focus,
+    .moulage-carousel2:hover,
+    .moulage-carousel2:focus,
+    .moulage-carousel3:hover,
+    .moulage-carousel3:focus {
+      filter: none;
+    }
     
     .moulage-carousel1 {
       width: 40%;
@@ -792,9 +794,6 @@
     transform: scaleX(-1);
   }
   
-  .arrow-next {
-  }
-  
   .moulage-grid {
     max-width: 95vw;
     margin: 0 auto;
@@ -809,6 +808,18 @@
       padding: 1%;
       margin: 2%;        
     }
+  }
+
+  #moulage-grid-container1,
+  #moulage-grid-container2 {
+    width: 90vw;
+    margin: 0 auto;
+    perspective: 90vh;
+  }
+
+  #moulage-grid1,
+  #moulage-grid2 {
+    transition: transform 0.5s;
   }
   
   .portfolio-page2 {
@@ -864,6 +875,19 @@
     }
     h2 {
       // color: white;
+    }
+
+    .try-again {
+      margin: 5% 0;
+
+      a {
+        font-size: 24px;
+      }
+
+      a:hover,
+      a:focus {
+        color: #170a09;
+      }
     }
   }
 
@@ -1046,8 +1070,26 @@
         padding: 0;
         margin: 0;
       }
-      
     }
+        .page4 {
+          background-attachment: initial;
+        }
+
+        .color {
+          height: 90vh;
+
+          .color-background {
+            height: 100%;
+          }
+
+          .color-wrapper {
+            img {
+              width: 26%;
+              margin: 3%;
+            }
+          }
+        }
+
     .look__text {
       width: 100%; 
 
@@ -1065,6 +1107,20 @@
       flex-flow: column nowrap;
     }
     
+    .prints {
+      h5 {
+        display: block;
+      }
+
+      .image-grid {
+        height: 100vh;
+
+       img {
+        width: 50%;
+      }
+    }
+    }
+
     .moulage3 .scene {
       width: 90%;
       margin: 3% auto;

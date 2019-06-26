@@ -299,10 +299,6 @@ header {
   background-image: url("../img/portfolio/type--hover.png");
 }
 
-.type__girl-wrapper {
-  height: 51vh;
-}
-
 img.cloud {
   opacity: 0.55;
 }
@@ -514,6 +510,9 @@ img.cloud {
   background-size: cover;
 }
 
+.prints h5 {
+  display: none;
+}
 .prints .cube-bg {
   height: inherit;
   width: 100vw;
@@ -521,8 +520,7 @@ img.cloud {
 }
 .prints .image-grid {
   background: none;
-  padding: 10% 0;
-  height: 800px;
+  height: 1000px;
   align-content: center;
   max-width: 100vw;
 }
@@ -630,6 +628,7 @@ img.cloud {
   display: block;
   position: absolute;
   right: 10%;
+  z-index: 2;
 }
 
 .portfolio .moulages {
@@ -644,12 +643,21 @@ img.cloud {
 .portfolio .moulages .moulage-carousel3,
 .portfolio .moulages .moulage-carousel4 {
   position: relative;
+  filter: grayscale(1);
 }
 .portfolio .moulages .moulage-carousel1 .slick-arrow,
 .portfolio .moulages .moulage-carousel2 .slick-arrow,
 .portfolio .moulages .moulage-carousel3 .slick-arrow,
 .portfolio .moulages .moulage-carousel4 .slick-arrow {
   visibility: hidden;
+}
+.portfolio .moulages .moulage-carousel1:hover,
+.portfolio .moulages .moulage-carousel1:focus,
+.portfolio .moulages .moulage-carousel2:hover,
+.portfolio .moulages .moulage-carousel2:focus,
+.portfolio .moulages .moulage-carousel3:hover,
+.portfolio .moulages .moulage-carousel3:focus {
+  filter: none;
 }
 .portfolio .moulages .moulage-carousel1 {
   width: 40%;
@@ -728,6 +736,18 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   margin: 2%;
 }
 
+#moulage-grid-container1,
+#moulage-grid-container2 {
+  width: 90vw;
+  margin: 0 auto;
+  perspective: 90vh;
+}
+
+#moulage-grid1,
+#moulage-grid2 {
+  transition: transform 0.5s;
+}
+
 .portfolio-page2 section h2,
 .portfolio-page2 section h3 {
   font-family: "Stalinist One", cursive;
@@ -766,6 +786,17 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   width: 30%;
   padding: 2%;
 }
+.portfolio-page4 .try-again {
+  margin: 5% 0;
+}
+.portfolio-page4 .try-again a {
+  font-size: 24px;
+}
+.portfolio-page4 .try-again a:hover,
+.portfolio-page4 .try-again a:focus {
+  color: #170a09;
+}
+
 .show-looks {
   width: 100vw;
 }
@@ -922,6 +953,21 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
     margin: 0;
   }
 
+  .page4 {
+    background-attachment: initial;
+  }
+
+  .color {
+    height: 90vh;
+  }
+  .color .color-background {
+    height: 100%;
+  }
+  .color .color-wrapper img {
+    width: 26%;
+    margin: 3%;
+  }
+
   .look__text {
     width: 100%;
   }
@@ -935,6 +981,16 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 
   .even {
     flex-flow: column nowrap;
+  }
+
+  .prints h5 {
+    display: block;
+  }
+  .prints .image-grid {
+    height: 100vh;
+  }
+  .prints .image-grid img {
+    width: 50%;
   }
 
   .moulage3 .scene {
