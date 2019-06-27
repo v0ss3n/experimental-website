@@ -601,6 +601,7 @@
           height: 1000px;
           align-content: center;
           max-width: 100vw;
+          position: relative;
           
           img {
             align-self: center;
@@ -1009,7 +1010,7 @@
       .prints-text {
         position: absolute;
         width: 100vw;
-        top: -14%;
+        top: -24%;
         
         img {
           width: 100%;
@@ -1315,10 +1316,20 @@
           
           .image-grid {
             min-height: 100vh;
+
             
             img {
               width: 50%;
             }
+
+            .prints-text {
+              display: block;
+              position: initial;
+              top: 0;
+            img {
+              width: 100%;
+            }
+          }
           }
         }
         

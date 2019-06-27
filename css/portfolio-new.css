@@ -545,6 +545,7 @@ img.cloud {
   height: 1000px;
   align-content: center;
   max-width: 100vw;
+  position: relative;
 }
 .prints .image-grid img {
   align-self: center;
@@ -903,7 +904,7 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 .prints-text {
   position: absolute;
   width: 100vw;
-  top: -14%;
+  top: -24%;
 }
 .prints-text img {
   width: 100%;
@@ -1161,6 +1162,14 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   }
   .prints .image-grid img {
     width: 50%;
+  }
+  .prints .image-grid .prints-text {
+    display: block;
+    position: initial;
+    top: 0;
+  }
+  .prints .image-grid .prints-text img {
+    width: 100%;
   }
 
   .moulage3 .scene {
