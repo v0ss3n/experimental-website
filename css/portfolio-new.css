@@ -98,7 +98,7 @@ header {
 }
 
 .page1 h3 {
-  font-size: 72px;
+  font-size: 6vw;
   text-align: center;
 }
 
@@ -149,25 +149,18 @@ header {
   flex: none;
 }
 .page1 .scene,
-.page1 .color-wrapper,
 .page1 .sketch-bar-links,
 .page2 .scene,
-.page2 .color-wrapper,
 .page2 .sketch-bar-links,
 .type .scene,
-.type .color-wrapper,
 .type .sketch-bar-links,
 .page5 .scene .scene,
-.page5 .scene .color-wrapper,
 .page5 .scene .sketch-bar-links,
 .color .scene,
-.color .color-wrapper,
 .color .sketch-bar-links,
 .sketch-bar .scene,
-.sketch-bar .color-wrapper,
 .sketch-bar .sketch-bar-links,
 .moulage3 .scene .scene,
-.moulage3 .scene .color-wrapper,
 .moulage3 .scene .sketch-bar-links {
   margin-left: -100%;
 }
@@ -406,7 +399,7 @@ img.cloud {
 .look__page .look__process {
   position: absolute;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
 }
 .look__page .look__process img {
@@ -535,6 +528,9 @@ img.cloud {
   background-size: cover;
 }
 
+.prints {
+  position: relative;
+}
 .prints h5 {
   display: none;
 }
@@ -542,6 +538,7 @@ img.cloud {
   height: inherit;
   width: 100vw;
   position: absolute;
+  z-index: -1;
 }
 .prints .image-grid {
   background: none;
@@ -613,6 +610,11 @@ img.cloud {
 .color {
   align-items: center;
   position: relative;
+  background: url("../img/portfolio/color-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
 }
 
 .color-background {
@@ -668,7 +670,6 @@ img.cloud {
 .portfolio .moulages .moulage-carousel3,
 .portfolio .moulages .moulage-carousel4 {
   position: relative;
-  filter: grayscale(1);
 }
 .portfolio .moulages .moulage-carousel1 .slick-arrow,
 .portfolio .moulages .moulage-carousel2 .slick-arrow,
@@ -695,7 +696,6 @@ img.cloud {
   max-width: 520px;
   margin: 4%;
   margin-top: -20%;
-  box-shadow: 13px 13px 9px #adadada8;
 }
 .portfolio .moulages .moulage-carousel3 {
   width: 44%;
@@ -727,8 +727,9 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   width: 60%;
 }
 
-.moulages3 {
-  margin-top: -30%;
+.portfolio .moulages3 {
+  margin-top: -12%;
+  filter: saturate(0.9) drop-shadow(2px 4px 6px grey);
 }
 
 .lamps {
@@ -817,6 +818,14 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   transform: scaleX(-1);
 }
 
+.moulage-overview {
+  margin: -8% 7% -2% 0;
+}
+.moulage-overview img {
+  width: 90%;
+  height: auto;
+}
+
 .moulage-grid {
   max-width: 95vw;
   margin: 0 auto;
@@ -876,6 +885,29 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 }
 .portfolio-page2 .datamosh .image-grid img {
   width: 20%;
+}
+
+.color .tap {
+  position: absolute;
+  width: 20vw;
+  top: 18%;
+  right: -7%;
+  filter: drop-shadow(8px 6px 10px black);
+}
+.color .tap img {
+  width: 100%;
+  transform: rotate(150deg);
+  height: auto;
+}
+
+.prints-text {
+  position: absolute;
+  width: 100vw;
+  top: -14%;
+}
+.prints-text img {
+  width: 100%;
+  height: auto;
 }
 
 .portfolio-page3 .title-designs {
@@ -938,12 +970,15 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 .phone .phone-base img {
   width: 100%;
 }
-.phone .phone-button {
+.phone .phone-button,
+.phone .phone-button0 {
   position: absolute;
   padding: 1.8vw;
   z-index: 20;
 }
-.phone .phone-button:hover, .phone .phone-button:focus {
+.phone .phone-button:hover, .phone .phone-button:focus,
+.phone .phone-button0:hover,
+.phone .phone-button0:focus {
   cursor: pointer;
 }
 .phone #phone-button1 {
@@ -981,6 +1016,23 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
 .phone #phone-button9 {
   top: 18vw;
   left: 30vw;
+}
+.phone #phone-button10 {
+  top: 22vw;
+  left: 25vw;
+}
+.phone #phone-button11 {
+  top: 22vw;
+  left: 28vw;
+}
+.phone #phone-button12 {
+  top: 21.5vw;
+  left: 31.5vw;
+}
+.phone #phone-button13 {
+  top: 25vw;
+  left: 26vw;
+  padding-right: 8vw;
 }
 
 @keyframes flicker {
@@ -1045,8 +1097,7 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
   }
 }
 @media screen and (max-width: 768px) {
-  h2,
-.page1 h3 {
+  h2 {
     font-size: 32px;
   }
 
@@ -1106,7 +1157,7 @@ section.moulages2 video:first-of-type, section.moulages2 video:nth-of-type(4) {
     display: block;
   }
   .prints .image-grid {
-    height: 100vh;
+    min-height: 100vh;
   }
   .prints .image-grid img {
     width: 50%;
