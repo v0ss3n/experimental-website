@@ -4,9 +4,12 @@
   justify-content: space-between;
   flex-flow: row wrap;
 }
-.bio img {
+.bio div {
   width: 40%;
   max-width: 500px;
+}
+.bio div img {
+  width: 100%;
 }
 
 .cv {
@@ -43,6 +46,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .bio div {
+    width: 100%;
+  }
+
   .cv {
     transform: none;
   }

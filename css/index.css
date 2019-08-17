@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+.index {
+  background-color: #000000;
+}
+.index h2 {
+  color: white;
+}
+.index h3 {
+  font-family: "Source Code Pro", sans-serif;
+  color: white;
+  margin: 10px;
+  padding-left: 2%;
+}
+.index h4 {
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
+  margin: 0;
+}
+.index a {
+  font-family: "Chakra Petch", sans-serif;
+  color: #b4d6d4;
+}
+.index a:hover, .index a:active {
+  color: aliceblue;
+  cursor: pointer;
+}
+.index .videowrapper {
+  padding-top: 0;
+}
+.index .menu div div,
+.index .videowrapper div {
+  border: 5px solid #d6fffc;
+  padding: 0 20px;
+}
+.index .mid-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.index .mid-section .mid-section__left {
+  width: 25%;
+}
+.index .mid-section .mid-section__middle {
+  width: 60%;
+  margin: 0 4% 4% 4%;
+}
+.index .mid-section .mid-section__middle h4 {
+  margin: 10px;
+}
+.index .mid-section .mid-section__middle h4 a {
+  font-family: "Source Code Pro", sans-serif;
+  color: white;
+}
+.index .mid-section .mid-section__middle h4 a:hover {
+  color: rgba(128, 37, 37, 0.541);
+}
+.index .mid-section .mid-section__right {
+  width: 20%;
+}
+.index .clock {
+  color: #d6fffc;
+  font-size: 20px;
+  font-family: "Stalinist One", cursive;
+  letter-spacing: 7px;
+  text-align: right;
+  padding: 0 2%;
+}
+.index hr {
+  visibility: hidden;
+}
+.index .button {
+  padding: 1% 2%;
+  position: relative;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  margin: 10px;
+  color: #d6fffc;
+}
+.index .button a {
+  text-decoration: none;
+}
+.index .button:focus {
+  outline: none;
+  opacity: 0.2;
+}
+.index .button.button--1 {
+  background-color: rgba(66, 214, 202, 0.1);
+  border-radius: 10px;
+  border-bottom: 3px solid #d6fffc;
+  transition: all 0.5s ease;
+}
+.index .button.button--1:hover {
+  background-color: rgba(66, 214, 202, 0.3);
+  border-radius: 20px;
+}
+.index .button.button--2 {
+  transition: all 0.5s ease;
+  border: 3px solid white;
+}
+.index .button.button--2:hover {
+  background-color: rgba(128, 37, 37, 0.541);
+}
+@keyframes grow {
+  from {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .index .mid-section {
+    flex-flow: column-reverse nowrap;
+  }
+  .index .mid-section .mid-section__left,
+.index .mid-section .mid-section__middle,
+.index .mid-section .mid-section__right {
+    width: 100%;
+  }
+  .index .mid-section .mid-section__middle {
+    margin: 0 0 4%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

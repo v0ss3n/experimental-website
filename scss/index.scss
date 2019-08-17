@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+
+$bg-color: #000000;
+$border-color: #d6fffc;
+$primary-color: white;
+$secondary-color: rgba(128, 37, 37, 0.541);
+$link-color: #b4d6d4;
+$link-color--hover: aliceblue;
+
+$ff-neuton: "Neuton", serif;
+$ff-krona: "Krona One", sans-serif;
+$ff-stalinist: "Stalinist One", cursive;
+$ff-scheherazade: "Scheherazade", serif;
+$ff-libre-baskerville: "Libre Baskerville", serif;
+$ff-chakra-petch: 'Chakra Petch', sans-serif;
+$ff-source-code-pro: 'Source Code Pro', sans-serif;
+
+
+.index {
+  background-color: $bg-color;
+
+  h2 {
+    color: $primary-color;
+  }
+
+  h3 {
+    font-family: $ff-source-code-pro;
+    color: $primary-color;
+    margin: 10px;
+    padding-left: 2%;
+  }
+
+  h4 {
+    font-family: $ff-chakra-petch;
+    color: $primary-color;
+    margin: 0;
+  }
+
+  a {
+    font-family: $ff-chakra-petch;
+    color: $link-color;
+
+    &:hover,
+    &:active {
+      color: $link-color--hover;
+      cursor: pointer;
+    }
+  }
+
+  .videowrapper {
+    padding-top: 0;
+  }
+
+  .menu div div,
+  .videowrapper div {
+    border: 5px solid $border-color;
+    padding: 0 20px;
+  }
+
+  .mid-section {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .mid-section__left {
+      width: 25%;
+    }
+    .mid-section__middle {
+      width: 60%;
+      margin: 0 4% 4% 4%;    
+      h4 {
+        margin: 10px;
+        a {
+          font-family: $ff-source-code-pro;
+          color: $primary-color;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    .mid-section__right {
+      width: 20%;
+    }
+  }
+
+
+.clock {
+    color: $border-color;
+    font-size: 20px;
+    font-family: $ff-stalinist;
+    letter-spacing: 7px;
+    text-align: right;
+    padding: 0 2%;
+}
+
+  hr {
+    visibility: hidden;
+  }
+  
+  .button {
+    padding: 1% 2%;
+    position: relative;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    margin: 10px;
+    color: $border-color;
+    a {
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none;
+      opacity: 0.2;
+    }
+ 
+    &.button--1 {
+      background-color: rgba(66, 214, 202, 0.1);
+      border-radius: 10px;
+      border-bottom: 3px solid $border-color;
+      transition: all 0.5s ease;
+      
+      &:hover {
+        background-color: rgba(66, 214, 202, 0.3);
+        border-radius: 20px;
+      }
+    }
+
+    &.button--2 {
+      transition: all 0.5s ease;
+      border: 3px solid $primary-color;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+@keyframes grow {
+  from {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+}
+
+@media screen and (max-width: 768px) {
+  .index .mid-section {
+    flex-flow: column-reverse nowrap;
+
+    .mid-section__left,
+    .mid-section__middle,
+    .mid-section__right {
+      width: 100%;
+    }
+
+    .mid-section__middle {
+      margin: 0 0 4%;    
+    }
+  }
+}

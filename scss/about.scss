@@ -16,9 +16,12 @@ $ff-chakra-petch: 'Chakra Petch', sans-serif;
   justify-content: space-between;
   flex-flow: row wrap;
 
-img {
+div {
   width: 40%;
   max-width: 500px;
+  img {
+    width: 100%;
+  }
 }
 }
 
@@ -64,6 +67,9 @@ img {
   }
 
   @media screen and (max-width: 768px) {
+    .bio div {
+      width: 100%;
+  }
     .cv {
       transform: none;
     }
