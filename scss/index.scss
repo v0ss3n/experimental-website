@@ -76,7 +76,7 @@ $ff-source-code-pro: 'Source Code Pro', sans-serif;
           font-family: $ff-source-code-pro;
           color: $primary-color;
           &:hover {
-            color: $secondary-color;
+            color: $link-color--hover;
           }
         }
       }
