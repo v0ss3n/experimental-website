@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fabricademy on Documentation</title>
-    <link>./projects/textilelab/fabricademy/</link>
+    <link>http://michellevossen.com/documentation/projects/textilelab/fabricademy/</link>
     <description>Recent content in Fabricademy on Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Oct 2019 12:15:12 +0200</lastBuildDate>
     
-	<atom:link href="./projects/textilelab/fabricademy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://michellevossen.com/documentation/projects/textilelab/fabricademy/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Documentation</title>
-    <link>./about/</link>
+    <link>http://michellevossen.com/documentation/about/</link>
     <description>Recent content in About on Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Oct 2019 12:06:35 +0200</lastBuildDate>
     
-	<atom:link href="./about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://michellevossen.com/documentation/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
