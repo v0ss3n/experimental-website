@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Textilelab on Michelle Vossen documentation</title>
-    <link>/projects/textilelab/</link>
-    <description>Recent content in Textilelab on Michelle Vossen documentation</description>
+    <title>Textilelab on Documentation</title>
+    <link>./projects/textilelab/</link>
+    <description>Recent content in Textilelab on Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Tue, 08 Oct 2019 12:11:06 +0200</lastBuildDate>
     
-	<atom:link href="/projects/textilelab/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./projects/textilelab/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

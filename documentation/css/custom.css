@@ -1,0 +1,8 @@
+body .copyright p.credit {
+    font-size: 0;
+    color: red;
+}
+
+ol, ul {
+    margin-bottom: 30px;
+}
