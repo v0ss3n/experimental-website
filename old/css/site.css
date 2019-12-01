@@ -1,0 +1,214 @@
+html {
+  font-size: 55%; /*1 rem equals 10px*/
+}
+
+.bg-proj {
+background: url(../images/projects/b-g.jpg) no-repeat bottom center fixed;
+-webkit-background-size: 100% auto;
+-moz-background-size: 100% auto;
+-o-background-size: 100% auto;
+background-size: 100% auto;
+}
+
+.bg-About {
+background: url(../images/bg-About.png) no-repeat top center fixed;
+-webkit-background-size: 100% auto;
+-moz-background-size: 100% auto;
+-o-background-size: 100% auto;
+background-size: 100% auto;
+}
+
+ul {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 3rem;
+    list-style-type: none;
+    margin-top: 3.6rem;
+    margin-bottom: -1rem;
+    margin-left: 14px;
+    padding: 0;
+    display: inline-block;
+    line-height: 3rem;
+    position: relative;
+}
+
+li {
+    float: left;
+    padding-right: 3.6rem;
+}
+
+ul:after {
+  display: table;
+  content: '';
+  clear: both; /*  gotta clear the float for some reason so delete spacer*/
+}
+
+.logo {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 5rem;
+    margin-top: 2rem;
+    padding-right: 1rem;
+    float: right;
+    line-height: 2rem;
+}
+
+.spacer {
+    width: 100%;
+    height: 3rem;
+}
+
+a {
+  display: block;
+  text-decoration:none!important;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: cyan;
+}
+
+a:active {
+  color: magenta;
+}
+
+p {
+  font-family: 'Anonymous Pro', serif;
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 7.2rem;
+  margin: 0rem;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+h2 {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 3.6rem;
+  margin: 0rem;
+  display: block;
+}
+
+h3 {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 3.6rem;
+}
+
+/* About */
+
+.about-img {
+  text-align: right;
+  width: 100%;
+}
+.about-img img {
+  width: 70%;
+}
+
+/* Fashion Illustration */
+.fi {
+  height: 60rem;
+}
+div.horscroll-wrappers {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.horscroll-wrappers > div {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 48.5%;
+  height: 0;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.video iframe {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image img {
+  height: 88vh;
+  width: auto;
+}
+
+/*Projects*/
+
+.enter img {
+  width: 100vw;
+  margin-top: 1.4rem;
+}
+
+.description {
+  display: inline-block;
+  background-color: white;
+  width: 50vw;
+  vertical-align: top;
+}
+
+.container-prints {
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+   grid-gap: 1.8rem;
+}
+
+.gif {
+  width: 40vw;
+  display: inline-block;
+}
+
+.container-proj {
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-gap: 4vw;
+  padding-top: 4vw;
+}
+
+.proj img {
+    width: 40vw;
+    padding-left: 2vw;
+    transition: all 0.7s ease;
+    display: inline-block;
+}
+
+.proj:hover img {
+     transform:scale(1.12);
+}
+
+@media screen and (max-width: 603px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+  ul {
+    margin-top: 0rem;
+  }
+  li {
+    padding-right: 1.2rem;
+    float:none;
+  }
+  .logo {
+    padding-right: 0;
+    padding-top: -5rem;
+  }
+  .about-img img {
+    width: 90%;
+  }
+}

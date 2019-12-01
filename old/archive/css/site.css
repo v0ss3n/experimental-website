@@ -1,0 +1,175 @@
+html {
+  font-size: 62.5%; /*1 rem equals 10px*/
+}
+
+
+.bg-index {
+background: url(../images/bg-index.png) no-repeat bottom center fixed;
+-webkit-background-size: 100% auto;
+-moz-background-size: 100% auto;
+-o-background-size: 100% auto;
+background-size: 100% auto;
+}
+
+.bg-About {
+background: url(../images/bg-About.png) no-repeat top center fixed;
+-webkit-background-size: 100% auto;
+-moz-background-size: 100% auto;
+-o-background-size: 100% auto;
+background-size: 100% auto;
+}
+
+ul {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:block;
+    width:100%;
+    position: relative;
+}
+
+li {
+    float: left;
+    padding-left: 1.4rem;
+    background-color: white;
+}
+
+ul:after {
+  display: table;
+  content: '';
+  clear: both; /* u gotta clear the float for some reason so delete spacer*/
+}
+
+/*@media (max-width: 600px) { ALLES SCHAALT MEE WOEH voor op mobiel is lachen
+  html,
+  body {
+    font-size: 9px;
+  }
+}*/
+
+.spacer {
+    width: 100%;
+    height: 3rem;
+}
+
+a {
+  display: block;
+  text-decoration:none!important;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: cyan;
+}
+
+a:active {
+  color: magenta;
+}
+
+p {
+  font-family: 'Anonymous Pro', serif;
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 7.2rem;
+  margin: 0rem;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+h2 {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 3.6rem;
+  margin: 0rem;
+  display: block;
+}
+
+h3 {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 3.6rem;
+}
+
+
+/* Fashion Technology */
+
+.container-prints {
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+   grid-gap: 1.8rem;
+}
+
+
+.gif {
+  padding: 2rem;
+  display: inline-block;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* About */
+
+.about-img {
+  position: absolute;
+  right: 0px;
+  bottom: 2rem;
+}
+
+/* Fashion Illustration */
+.fi {
+  height: 60rem;
+}
+
+.horscroll-wrappers {
+  width: 56.605rem;
+  height: 56.6vw;
+  padding-top: 56.605rem;
+  overflow: scroll;
+  transform:rotate(-90deg) translateY(-56.605rem);
+  transform-origin: right top;
+}
+
+.horscroll-wrappers > div {
+  width: 56.605rem;
+  height: 40rem;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  margin-right: 5rem;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 48.5%;
+  height: 0;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.video iframe {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*.image img {
+    transition: all 0.7s ease;
+}
+
+.image:hover img {
+     transform:scale(1.12);
+}*/
