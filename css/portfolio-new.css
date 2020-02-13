@@ -59,7 +59,8 @@ h5 {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .lookwrapper {
@@ -206,7 +207,6 @@ header {
 }
 
 a .click-here {
-  text-align: center;
   display: inline-block;
   color: #b4d6d4;
 }
