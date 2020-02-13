@@ -2,9 +2,10 @@
   background: black;
   hyphens: auto;
 
-  h2 {
+  h2,
+  h2 a {
     color: white;
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   .textile-grid {
@@ -76,13 +77,24 @@
   img {
     width: 100%;
   }
+
+  &:hover,
+  &:focus {
+    animation: 1s back forwards alternate ease-in-out;
+  }
+}
+
+@keyframes back {
+  0% {transform: scale(1.0) rotate(0deg);}
+  100% {transform: scale(1.1) rotate(180deg);}
 }
 
 .print-grid {
   display: flex;
   width: 100vw;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   h3,
   p {
@@ -95,6 +107,18 @@
     img {
       width: 100%;
     }
+  }
+}
+
+.print-grid-4 {
+  img {
+    width: 25%;
+  }
+}
+
+.print-grid-5 {
+  img {
+    width: 20%;
   }
 }
 
