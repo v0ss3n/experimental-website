@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch");
 
-$ff-chakra-petch: 'Chakra Petch', sans-serif;
-
+$ff-chakra-petch: "Chakra Petch", sans-serif;
 
 // body {
 //   background: black;
@@ -16,13 +15,13 @@ $ff-chakra-petch: 'Chakra Petch', sans-serif;
   justify-content: space-between;
   flex-flow: row wrap;
 
-div {
-  width: 40%;
-  max-width: 500px;
-  img {
-    width: 100%;
+  div {
+    width: 40%;
+    max-width: 500px;
+    img {
+      width: 100%;
+    }
   }
-}
 }
 
 .cv {
@@ -34,54 +33,54 @@ div {
   transform: skew(-7deg, -7deg);
   background: white;
   box-shadow: 5px 10px 10px darkgrey;
-  
+
   p {
     font-family: $ff-chakra-petch;
     color: black;
     // &:hover,
     // &:focus {
-      //   transform: skew(-10deg, -7deg);
-      // }
-    }
-    
-    a {
-      color: black;
-      &:hover,
-      &:focus {
+    //   transform: skew(-10deg, -7deg);
+    // }
+  }
+
+  a {
+    color: black;
+    &:hover,
+    &:focus {
       color: lime;
-      }
     }
-    
-    h3 {
+  }
+
+  h3 {
+    width: 100%;
+    padding: 4% 4% 0 4%;
+  }
+  .column {
+    width: 42%;
+    padding: 0 4% 4%;
+    background: white;
+    img {
       width: 100%;
-      padding: 4% 4% 0 4%;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bio div {
+    width: 100%;
+  }
+  .cv {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .cv {
+    flex-flow: column nowrap;
+    padding: 5%;
     .column {
-      width: 42%; 
-      padding: 0 4% 4%;
-      background: white;
-      img {
-        width: 100%;
-      }
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .bio div {
       width: 100%;
-  }
-    .cv {
-      transform: none;
+      padding: 0;
     }
   }
-
-  @media screen and (max-width: 414px) {
-    .cv {
-      flex-flow: column nowrap;
-      padding: 5%;
-      .column {
-        width: 100%;
-        padding: 0;
-      }
-    }
-  }
+}
