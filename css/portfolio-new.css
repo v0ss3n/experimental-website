@@ -209,6 +209,7 @@ header {
 a .click-here {
   display: inline-block;
   color: #b4d6d4;
+  hyphens: none;
 }
 
 .arrow-img {
